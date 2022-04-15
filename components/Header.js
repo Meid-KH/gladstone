@@ -24,10 +24,34 @@ const MENU_ITEMS = [
 
 const Header = () => {
 	// console.log(Router.pathname);
+	const [sticky, setSticky] = React.useState(false);
+
+	React.useEffect(() => {
+		let scrollPos = 0;
+		window.addEventListener("scroll", () => {
+			if (document.body.getBoundingClientRect().top > scrollPos) {
+				setSticky(true);
+				console.log("Scrol is up");
+			} else {
+				setSticky(false);
+				console.log("Scrol is down");
+			}
+			scrollPos = document.body.getBoundingClientRect().top;
+		});
+	}, []);
+
 	return (
-		<header className="h-28 py-4 px-8 sticky z-50 top-0 backdrop-blur">
+		<header
+			className={`grid place-items-center h-28 py-8 px-8 ${
+				sticky && "sticky z-50 top-0 backdrop-blur"
+			}`}
+		>
 			<div className="container">
-				<div className="flex-1 flex gap-8 items-center justify-between">
+				<div
+					className={`flex-1 flex gap-8 items-center  ${
+						sticky ? "justify-center" : "justify-between"
+					}`}
+				>
 					<Gladstone />
 					<Menu />
 				</div>
@@ -43,17 +67,34 @@ const Gladstone = () => (
 		</a>
 	</Link>
 );
-const MenuItem = ({ link, label }) => (
-	<Link href={link}>
-		<a
-			className={`font-light tracking-wide leading-none underline-offset-4 py-2.5 px-4 rounded-lg hover:bg-accent/20 focus:ring-2 ${
-				Router.pathname == "/" && "font-medium"
-			}`}
-		>
-			{label}
-		</a>
-	</Link>
-);
+const MenuItem = ({ link, label }) => {
+	const NavigateToContent = async (e) => {
+		let elem = document.querySelector(e.target.hash);
+		e.preventDefault();
+		// console.log(e.target.hash)
+
+		// 1. Use some state to update header aswell
+		elem.scrollIntoView({
+			behavior: "smooth",
+			block: "start",
+			top: "-500px",
+		});
+	};
+
+	return (
+		<Link href={link}>
+			<a
+				className={`font-light tracking-wide leading-none underline-offset-4 py-2.5 px-4 rounded-lg hover:bg-accent/20 focus:ring-2 ${
+					Router.pathname == "/" && "font-medium"
+				}`}
+				onClick={NavigateToContent}
+			>
+				{label}
+			</a>
+		</Link>
+	);
+};
+
 const Menu = () => (
 	<nav className="flex gap-3 justify-between items-center w-full max-w-4xl">
 		{MENU_ITEMS?.map((item, index) => (
@@ -66,5 +107,4 @@ const Menu = () => (
 		</div>
 	</nav>
 );
-
 export default Header;
