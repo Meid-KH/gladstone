@@ -23,7 +23,7 @@ const MENU_ITEMS = [
 ];
 
 const Header = () => {
-	console.log(Router.pathname);
+	// console.log(Router.pathname);
 	return (
 		<header className="h-28 py-4 px-8 sticky z-50 top-0 backdrop-blur">
 			<div className="container">
