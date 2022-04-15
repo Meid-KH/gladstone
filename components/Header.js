@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 const MENU_ITEMS = [
 	{
-		url: "/",
+		url: "#activity",
 		label: "Activité",
 	},
 	{
@@ -25,7 +25,7 @@ const MENU_ITEMS = [
 const Header = () => {
 	console.log(Router.pathname);
 	return (
-		<header className="h-28 py-8 px-8">
+		<header className="h-28 py-4 px-8 sticky z-50 top-0 backdrop-blur">
 			<div className="container">
 				<div className="flex-1 flex gap-8 items-center justify-between">
 					<Gladstone />

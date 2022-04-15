@@ -20,16 +20,25 @@
 		@apply font-main;
 	}
 	p {
-		@apply leading-normal tracking-wider font-light;
+		@apply leading-[1.725] tracking-wider font-light;
+	}
+	p:not(:last-child) {
+		@apply mb-5 lg:mb-7;
+	}
+	p strong {
+		@apply font-medium;
 	}
 }
 
 @layer components {
 	.container {
-		@apply mx-auto;
+		@apply mx-auto px-4;
+	}
+	.container-sm {
+		@apply mx-auto max-w-[calc(938px+theme(padding.4))] px-4;
 	}
 	.radial-shadow {
-		@apply relative before:content-[''] before:absolute before:inset-0 before:opacity-50;
+		@apply relative before:content-[''] before:lg:min-h-[calc(100vh-theme(height.10))] before:absolute before:inset-0 before:opacity-50 before:-z-10;
 	}
 	.radial-shadow::before {
 		background: radial-gradient(
@@ -37,5 +46,7 @@
 			rgba(233, 155, 72, 0.7) 0%,
 			rgba(222, 196, 167, 0) 100%
 		);
+	}
+	.cube-left {
 	}
 }
