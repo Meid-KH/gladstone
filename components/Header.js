@@ -31,10 +31,10 @@ const Header = () => {
 		window.addEventListener("scroll", () => {
 			if (document.body.getBoundingClientRect().top > scrollPos) {
 				setSticky(true);
-				console.log("Scrol is up");
+				// console.log("Scrol is up");
 			} else {
 				setSticky(false);
-				console.log("Scrol is down");
+				// console.log("Scrol is down");
 			}
 			scrollPos = document.body.getBoundingClientRect().top;
 		});
