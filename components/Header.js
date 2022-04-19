@@ -25,16 +25,16 @@ const MENU_ITEMS = [
 const Header = () => {
 	// console.log(Router.pathname);
 	const [sticky, setSticky] = React.useState(false);
+	// const [hideLogo, setHideLogo] = React.useState(false);
 
 	React.useEffect(() => {
 		let scrollPos = 0;
 		window.addEventListener("scroll", () => {
 			if (document.body.getBoundingClientRect().top > scrollPos) {
 				setSticky(true);
-				// console.log("Scrol is up");
+				scrollPos < -200 ? setSticky(true) : setSticky(false);
 			} else {
 				setSticky(false);
-				// console.log("Scrol is down");
 			}
 			scrollPos = document.body.getBoundingClientRect().top;
 		});
@@ -42,17 +42,17 @@ const Header = () => {
 
 	return (
 		<header
-			className={`grid place-items-center h-28 py-8 px-8 ${
-				sticky && "sticky z-50 top-0 backdrop-blur"
+			className={`grid place-items-center px-8 transition-all__ ${
+				sticky ? "sticky z-50 top-0 backdrop-blur py-10" : "py-8"
 			}`}
 		>
 			<div className="container">
 				<div
-					className={`flex-1 flex gap-8 items-center  ${
+					className={`flex-1 flex gap-8 items-center transition-all ${
 						sticky ? "justify-center" : "justify-between"
 					}`}
 				>
-					<Gladstone />
+					<Gladstone hide={sticky} />
 					<Menu />
 				</div>
 			</div>
@@ -60,9 +60,9 @@ const Header = () => {
 	);
 };
 
-const Gladstone = () => (
+const Gladstone = ({ hide }) => (
 	<Link href={"/"}>
-		<a className="block w-36 flex-shrink-0">
+		<a className={`flex-shrink-0 block w-48 ${hide && "hidden"}`}>
 			<Logo />
 		</a>
 	</Link>
@@ -77,7 +77,7 @@ const MenuItem = ({ link, label }) => {
 		elem.scrollIntoView({
 			behavior: "smooth",
 			block: "start",
-			top: "-500px",
+			// top: "-500px",
 		});
 	};
 
@@ -96,7 +96,7 @@ const MenuItem = ({ link, label }) => {
 };
 
 const Menu = () => (
-	<nav className="flex gap-3 justify-between items-center w-full max-w-4xl">
+	<nav className="flex items-center justify-between w-full max-w-4xl gap-3">
 		{MENU_ITEMS?.map((item, index) => (
 			<MenuItem key={index} link={item?.url} label={item?.label} />
 		))}

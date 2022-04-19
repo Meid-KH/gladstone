@@ -1,9 +1,13 @@
 import Head from "next/head";
+import React from "react";
+
 import Image from "next/image";
 import Logo from "../components/Logo";
 import LinedTitle from "../components/ui/LinedTitle";
 import ArticleRow from "../components/ui/ArticleRow";
 import Title from "../components/ui/Title";
+import Button from "../components/ui/Button";
+import Icon from "../components/ui/Icon";
 import Cubes from "../assets/img/cube-bg.png";
 import CubeLeft from "../assets/img/cube-left.png";
 import CubeRight from "../assets/img/cube-right.png";
@@ -31,18 +35,18 @@ const Intro = () => (
 		// 	backgroundImage: `url(${Cubes?.src})`,
 		// }}
 	>
-		<div className="relative space-y-6 text-center p-6">
-			<div className="w-[230px] max-w-full mx-auto">
+		<div className="relative p-6 space-y-6 text-center">
+			<div className="max-w-full mx-auto w-80">
 				<Logo />
 			</div>
 			<h1 className="inline-block uppercase text-xs tracking-[0.2em]">
 				Conseil en Recrutement Juridique
 			</h1>
 		</div>
-		<div className="absolute top-1/2 left-0 -z-10">
+		<div className="absolute left-0 top-1/2 -z-10">
 			<img src={CubeLeft?.src} alt="Cube Left" />
 		</div>
-		<div className="absolute top-1/4 right-0 -z-10">
+		<div className="absolute right-0 top-1/4 -z-10">
 			<img src={CubeRight?.src} alt="Cube Right" />
 		</div>
 	</section>
@@ -53,7 +57,7 @@ const Activity = () => (
 		<div className="container-sm">
 			<div className="text-center">
 				<Title>Activité</Title>
-				<p className="lg:max-w-3xl mx-auto tracking-wider text-lg">
+				<p className="mx-auto text-lg tracking-wider lg:max-w-3xl">
 					GLADSTONE est un cabinet d'Executive Search spécialisé dans
 					le recrutement juridique qui accompagne les cabinets
 					d'avocats, les directions juridiques, les banques et les
@@ -142,9 +146,9 @@ const Activity = () => (
 const OurApproach = () => (
 	<section
 		id="our-approach"
-		className="relative radial-shadow before:-translate-y-1/4 py-16 lg:py-20"
+		className="relative py-16 radial-shadow before:-translate-y-1/4 lg:py-20"
 	>
-		<div className="container-sm relative">
+		<div className="relative container-sm">
 			<ArticleRow>
 				<div className="grid place-items-center">
 					<Title className="m-0">
@@ -275,10 +279,10 @@ const OurApproach = () => (
 		</div>
 
 		{/* Cubes */}
-		<div className="absolute top-1/4 -translate-y-1/4 left-0 -z-10">
+		<div className="absolute left-0 top-1/4 -translate-y-1/4 -z-10">
 			<img src={CubeLeft?.src} alt="Cube Left" />
 		</div>
-		<div className="absolute top-0 -translate-y-1/4 right-0 -z-10">
+		<div className="absolute top-0 right-0 -translate-y-1/4 -z-10">
 			<img src={CubeRight?.src} alt="Cube Right" />
 		</div>
 	</section>
@@ -287,22 +291,22 @@ const OurApproach = () => (
 const Team = () => (
 	<section
 		id="team"
-		className="relative radial-shadow before:-top-1/2 py-16 lg:py-20"
+		className="relative py-16 radial-shadow before:-top-1/2 lg:py-20"
 	>
 		<div className="text-center">
 			<Title className="mb-12 lg:mb-20">Équipe</Title>
 		</div>
-		<div className="container-sm relative">
+		<div className="relative container-sm">
 			<ArticleRow>
 				<div>
 					<Image
-						className="rounded max-w-full"
+						className="max-w-full rounded"
 						src={Yasmine.src}
 						width={417}
 						height={376}
 						objectFit="cover"
 					/>
-					<LinedTitle className="text-2xl mt-8 lg:mt-12">
+					<LinedTitle className="mt-8 text-2xl lg:mt-12">
 						<h3>Yasmine khouri</h3>
 					</LinedTitle>
 					<p>
@@ -343,13 +347,13 @@ const Team = () => (
 
 				<div>
 					<Image
-						className="rounded max-w-full"
+						className="max-w-full rounded"
 						src={Hanna.src}
 						width={417}
 						height={376}
 						objectFit="cover"
 					/>
-					<LinedTitle className="text-2xl mt-8 lg:mt-12">
+					<LinedTitle className="mt-8 text-2xl lg:mt-12">
 						<h3>Hanna Ehrlich</h3>
 					</LinedTitle>
 					<p>
@@ -377,18 +381,114 @@ const Team = () => (
 		</div>
 
 		{/* Cubes */}
-		<div className="absolute top-1/4 -translate-y-1/2 left-0 -z-10">
+		<div className="absolute left-0 -translate-y-1/2 top-1/4 -z-10">
 			<img src={CubeLeft?.src} alt="Cube Left" />
 		</div>
-		<div className="absolute top-0 -translate-y-1/2 right-0 -z-10">
+		<div className="absolute top-0 right-0 -translate-y-1/2 -z-10">
 			<img src={CubeRight?.src} alt="Cube Right" />
 		</div>
 	</section>
 );
 
-const Contact = () => (
-	<section
-		id="contact"
-		className="relative radial-shadow before:-top-1/2 py-16 lg:py-20"
-	></section>
-);
+const Contact = () => {
+	const ContactSection = React.useRef(null);
+	const Scroll = () => {
+		ContactSection?.current?.scrollIntoView({
+			behavior: "smooth",
+			block: "start",
+		});
+	};
+	return (
+		<section
+			id="contact"
+			className="relative py-16 radial-shadow before:-top-1/2 lg:py-20"
+		>
+			<div className="container-sm">
+				<Button className="mx-auto" test="ok" onClick={Scroll}>
+					Nous contacter
+				</Button>
+				<div ref={ContactSection} className="pt-32">
+					<ArticleRow>
+						<div className="text-center">
+							<LinedTitle className="before:-translate-x-1/2 before:!left-1/2">
+								Yasmine khouri
+							</LinedTitle>
+							<p className="space-y-3">
+								<strong className="block">
+									Associée fondatrice
+								</strong>
+								<a
+									href="tel:+33 6 14 42 23 84"
+									className="block mx-auto w-max underline-offset-2 hover:underline"
+								>
+									+33 6 14 42 23 84
+								</a>
+								<a
+									href="mailto:yasmine.khouri@gladstone-search.com"
+									className="block mx-auto w-max texgt-sm underline-offset-2 hover:underline"
+								>
+									yasmine.khouri@gladstone-search.com
+								</a>
+							</p>
+							<div className="flex items-center justify-center gap-3">
+								<a
+									className="transition-transform hover:-translate-y-0.5"
+									href="https://www.linkedin.com/in/yasmine-khouri-3005b531/"
+									target="_blank"
+								>
+									<Icon name="linkedin" />
+								</a>
+								<a
+									className="transition-transform hover:-translate-y-0.5"
+									download
+									href="/files/pdf-file.pdf"
+								>
+									<Icon name="contact" className="!w-8" />
+								</a>
+							</div>
+						</div>
+
+						<div className="text-center">
+							<LinedTitle className="before:-translate-x-1/2 before:!left-1/2">
+								Hanna ehrlich
+							</LinedTitle>
+							<p className="space-y-3">
+								<strong className="block">
+									Associée fondatrice
+								</strong>
+								<a
+									href="tel:+33 6 73 90 82 49"
+									className="block mx-auto w-max underline-offset-2 hover:underline"
+								>
+									+33 6 73 90 82 49
+								</a>
+								<a
+									href="mailto:hanna.ehrlich@gladstone-search.com"
+									className="block mx-auto w-max texgt-sm underline-offset-2 hover:underline"
+								>
+									hanna.ehrlich@gladstone-search.com
+								</a>
+							</p>
+							<div className="flex items-center justify-center gap-3">
+								<a
+									className="transition-transform hover:-translate-y-0.5"
+									href="https://www.linkedin.com/in/hannaehrlich/"
+									target="_blank"
+								>
+									<Icon name="linkedin" />
+								</a>
+								<a
+									className="transition-transform hover:-translate-y-0.5"
+									download
+									href="/files/pdf-file.pdf"
+								>
+									<Icon name="contact" className="!w-8" />
+								</a>
+							</div>
+						</div>
+					</ArticleRow>
+				</div>
+			</div>
+		</section>
+	);
+};

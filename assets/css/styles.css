@@ -19,20 +19,35 @@
 	h6 {
 		@apply font-main;
 	}
-	p {
-		@apply leading-[1.725] tracking-wider font-light;
+	p,
+	ul {
+		@apply leading-[1.725] tracking-wider font-extralight;
 	}
-	p:not(:last-child) {
+	p:not(:last-child),
+	ul:not(:last-child) {
 		@apply mb-5 lg:mb-7;
 	}
 	p strong {
 		@apply font-medium;
 	}
+	svg {
+		@apply max-w-full fill-current;
+	}
+	.content ul,
+	.content p {
+		@apply text-justify;
+	}
+	.content ul {
+		@apply space-y-2;
+	}
+	.content li {
+		@apply relative pl-9 before:content-[''] before:absolute before:left-0 before:top-3.5 before:h-[1px] before:w-6 before:bg-current;
+	}
 }
 
 @layer components {
 	.container {
-		@apply mx-auto px-4;
+		@apply px-4 mx-auto;
 	}
 	.container-sm {
 		@apply mx-auto max-w-[calc(938px+theme(padding.4))] px-4;
@@ -46,7 +61,5 @@
 			rgba(233, 155, 72, 0.7) 0%,
 			rgba(222, 196, 167, 0) 100%
 		);
-	}
-	.cube-left {
 	}
 }
