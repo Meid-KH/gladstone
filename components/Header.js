@@ -90,7 +90,7 @@ const Gladstone = ({ hide }) => (
 			className={`flex-shrink-0 block w-48 ${hide && "hidden"}`}
 			initial={{ y: -10, scale: 0.95, opacity: 0 }}
 			animate={{ y: 0, scale: 1, opacity: 1 }}
-			transition={{ duration: 0.5 }}
+			transition={{ duration: 0.25 }}
 		>
 			<Logo />
 		</motion.a>
@@ -114,7 +114,7 @@ const MenuItem = ({ link, label, ...rest }) => {
 	return (
 		<Link href={link}>
 			<a
-				className={`font-light tracking-wide leading-none underline-offset-4 py-2.5 px-4 rounded-lg hover:bg-accent/20 focus:ring-2 ${
+				className={`font-light tracking-wide leading-none underline-offset-4 py-2.5 px-4 rounded-lg hover:bg-accent/20 focus:bg-accent/20 ${
 					Router.pathname == "/" && "font-medium"
 				}`}
 				onClick={NavigateToContent}
