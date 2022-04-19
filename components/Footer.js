@@ -38,7 +38,7 @@ const Footer = () => {
 								</Link>
 								<a
 									className="block w-max mx-auto mt-4 transition-transform hover:-translate-y-0.5"
-									href="https://www.linkedin.com/in/hannaehrlich/"
+									href="https://www.linkedin.com/company/gladstone-search/"
 									target="_blank"
 									rel="noreferrer"
 								>
