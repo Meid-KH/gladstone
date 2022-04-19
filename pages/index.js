@@ -435,6 +435,7 @@ const Contact = () => {
 									className="transition-transform hover:-translate-y-0.5"
 									href="https://www.linkedin.com/in/yasmine-khouri-3005b531/"
 									target="_blank"
+									rel="noreferrer"
 								>
 									<Icon name="linkedin" />
 								</a>
@@ -474,6 +475,7 @@ const Contact = () => {
 									className="transition-transform hover:-translate-y-0.5"
 									href="https://www.linkedin.com/in/hannaehrlich/"
 									target="_blank"
+									rel="noreferrer"
 								>
 									<Icon name="linkedin" />
 								</a>

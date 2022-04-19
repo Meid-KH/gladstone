@@ -40,6 +40,7 @@ const Footer = () => {
 									className="block w-max mx-auto mt-4 transition-transform hover:-translate-y-0.5"
 									href="https://www.linkedin.com/in/hannaehrlich/"
 									target="_blank"
+									rel="noreferrer"
 								>
 									<Icon name="linkedin" />
 								</a>
@@ -50,6 +51,7 @@ const Footer = () => {
 								<a
 									className="underline"
 									target="_blank"
+									rel="noreferrer"
 									href="https://www.magali-cariguel.com/"
 								>
 									Magali Cariguel
