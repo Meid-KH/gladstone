@@ -2,13 +2,19 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
+export const MainContext = React.createContext({
+	menuOpen: false,
+});
 const Layout = ({ children }) => {
+	console.log(MainContext.menuOpen);
 	return (
 		<>
-			<Header />
-			<div className="min-h-[85vh] ">{children}</div>
-			<Footer />
-			<ScrollTop />
+			<MainContext.Provider value={MainContext}>
+				<Header />
+				<div className="min-h-[85vh] ">{children}</div>
+				<Footer />
+				<ScrollTop />
+			</MainContext.Provider>
 		</>
 	);
 };

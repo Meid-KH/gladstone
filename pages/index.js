@@ -44,12 +44,12 @@ const Intro = () => (
 		// }}
 	>
 		<motion.div
-			className="relative p-6 space-y-6 text-center"
+			className="relative p-6 space-y-6 text-center lg:-translate-y-20"
 			initial={{ y: 20, scale: 0.95, opacity: 0 }}
 			animate={{ y: 0, scale: 1, opacity: 1 }}
 			transition={{ duration: 0.85 }}
 		>
-			<div className="max-w-full mx-auto w-80 lg:-translate-y-20">
+			<div className="max-w-full mx-auto w-60">
 				<Logo />
 			</div>
 			<h1 className="inline-block uppercase text-xs tracking-[0.2em]">
@@ -90,7 +90,7 @@ const Activity = () => {
 			<div className="container-sm">
 				<div className="text-center">
 					<Title>Activité</Title>
-					<p className="mx-auto text-lg tracking-wider lg:max-w-3xl">
+					<p className="mx-auto text-lg tracking-wider lg:max-w-2xl">
 						GLADSTONE est un cabinet d'Executive Search spécialisé
 						dans le recrutement juridique qui accompagne les
 						cabinets d'avocats, les directions juridiques, les
@@ -98,13 +98,14 @@ const Activity = () => {
 						renforcement de leurs équipes juridiques. Nos
 						recrutements portent sur des postes nécessitant une
 						connaissance du droit français, tant en France qu'à
-						l'étranger. Nous travaillons indifféremment en français
-						ou en anglais.
+						l'étranger. <br />
+						Nous travaillons indifféremment en français ou en
+						anglais.
 					</p>
 				</div>
 
 				<ArticleRow className="mt-12 lg:mt-28">
-					<div className="text-justify__">
+					<div className="text-justify">
 						<LinedTitle>
 							<h3>Cabinets d'avocats</h3>
 						</LinedTitle>
@@ -144,7 +145,7 @@ const Activity = () => {
 						</p>
 					</div>
 
-					<div className="text-justify__">
+					<div className="text-justify">
 						<LinedTitle>
 							<h3>
 								Recrutement juridique en entreprises, banques et
@@ -152,24 +153,34 @@ const Activity = () => {
 							</h3>
 						</LinedTitle>
 						<p>
-							Nous recrutons à tous niveaux de seniorité et dans
-							tous les domaines d'activité. Notre expérience avec
-							les directions juridiques d'entreprises nous a mené
-							à développer une connaissance approfondie des
-							secteurs de la Santé, de l'IT, du Luxe, et de l'Art.
-							Nous avons également assisté à plusieurs reprises
-							des banques et fonds d'investissement tant en France
-							qu'à l'international.
+							Nous recrutons{" "}
+							<strong>
+								à tous niveaux de seniorité et dans tous les
+								domaines d'activité
+							</strong>
+							. Notre expérience avec les{" "}
+							<strong>directions juridiques d'entreprises</strong>{" "}
+							nous a mené à développer une connaissance
+							approfondie des secteurs de la Santé, de l'IT, du
+							Luxe, et de l'Art. Nous avons également assisté à
+							plusieurs reprises des{" "}
+							<strong>
+								banques et fonds d'investissement tant en France
+								qu'à l'international
+							</strong>
+							.
 						</p>
 						<LinedTitle>
 							<h3>Candidats</h3>
 						</LinedTitle>
 						<p>
-							GLADSTONE accompagne les avocats et les juristes
-							souhaitant discuter de leur projet professionnel.
-							Nous sommes là pour vous permettre d'avoir une
-							vision approfondie du marché, vous conseiller et
-							vous éclairer sur les possibilités d'évolution qui
+							GLADSTONE accompagne les{" "}
+							<strong>avocats et les juristes</strong>
+							souhaitant discuter de leur{" "}
+							<strong>projet professionnel</strong>. Nous sommes
+							là pour vous permettre d'avoir une vision
+							approfondie du marché, vous conseiller et vous
+							éclairer sur les possibilités d'évolution qui
 							peuvent s'offrir à vous.
 						</p>
 					</div>
@@ -200,7 +211,7 @@ const OurApproach = () => {
 			<div className="relative container-sm">
 				<ArticleRow>
 					<div className="grid place-items-center">
-						<Title className="m-0">
+						<Title className="m-0 text-center">
 							Notre <br /> approche
 						</Title>
 					</div>
@@ -372,11 +383,12 @@ const Team = () => {
 				<ArticleRow>
 					<div>
 						<Image
-							className="max-w-full rounded"
+							className="max-w-full"
 							src={Yasmine.src}
 							width={417}
 							height={376}
 							objectFit="cover"
+							quality={100}
 						/>
 						<LinedTitle className="mt-8 text-2xl lg:mt-12">
 							<h3>Yasmine khouri</h3>
@@ -401,33 +413,20 @@ const Team = () => {
 							et à l'étranger.
 						</p>
 						<p>
-							Après avoir effectué ses études de droit à
-							l'Université Paris II Panthéon-Assas, Yasmine
-							commence sa carrière en tant qu'avocate dans un
-							cabinet spécialisé en droit de la propriété
-							intellectuelle. En 2014, elle rejoint le bureau de
-							Paris de Fox Rodney et devient conseil en
-							recrutement juridique. Elle intervient dans le
-							recrutement d'associés et de collaborateurs pour des
-							cabinets d'avocats internationaux et français. Elle
-							y developpe une connaissance approfondie du marché
-							français. Yasmine assiste également des directions
-							juridiques, des banques et des fonds
-							d'investissement dans leurs recrutements, à tous
-							niveaux de séniorité, en France et à l'étranger.
 							Yasmine rencontre Hanna chez Fox Rodney. Elles
-							travaillent ensemble 6 ans avant de s'associer au
+							travaillent ensemble 6 ans avant de s’associer au
 							sein de GLADSTONE.
 						</p>
 					</div>
 
 					<div>
 						<Image
-							className="max-w-full rounded"
+							className="max-w-full"
 							src={Hanna.src}
 							width={417}
 							height={376}
 							objectFit="cover"
+							quality={100}
 						/>
 						<LinedTitle className="mt-8 text-2xl lg:mt-12">
 							<h3>Hanna Ehrlich</h3>
@@ -503,7 +502,7 @@ const Contact = () => {
 				<div ref={ContactSection} className="pt-32">
 					<ArticleRow>
 						<div className="text-center">
-							<LinedTitle className="before:-translate-x-1/2 before:!left-1/2">
+							<LinedTitle className="text-center before:-translate-x-1/2 before:!left-1/2">
 								Yasmine khouri
 							</LinedTitle>
 							<p className="space-y-3">
@@ -543,7 +542,7 @@ const Contact = () => {
 						</div>
 
 						<div className="text-center">
-							<LinedTitle className="before:-translate-x-1/2 before:!left-1/2">
+							<LinedTitle className="text-center before:-translate-x-1/2 before:!left-1/2">
 								Hanna ehrlich
 							</LinedTitle>
 							<p className="space-y-3">

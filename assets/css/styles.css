@@ -20,11 +20,11 @@
 		@apply font-main;
 	}
 	p,
-	ul {
+	.content ul {
 		@apply leading-[1.725] tracking-wider font-extralight;
 	}
 	p:not(:last-child),
-	ul:not(:last-child) {
+	.content ul:not(:last-child) {
 		@apply mb-5 lg:mb-7;
 	}
 	p strong {

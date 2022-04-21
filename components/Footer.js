@@ -23,7 +23,7 @@ const Footer = () => {
 					</svg>
 					<div className="absolute inset-0 grid place-items-center">
 						<div className="max-w-lg mx-auto text-center lg:max-w-xl">
-							<div className="flex flex-col gap-3 mt-12 text-sm tracking-wider uppercase">
+							<div className="flex flex-col gap-3 mt-20 text-sm tracking-wider uppercase">
 								<span>Gladstone</span>
 								<span>16 Cours Albert 1er 75008 Paris</span>
 								<Link href="/politique-de-confidentialite">
@@ -36,16 +36,16 @@ const Footer = () => {
 										Mentions légales
 									</a>
 								</Link>
-								<a
-									className="block w-max mx-auto mt-4 transition-transform hover:-translate-y-0.5"
-									href="https://www.linkedin.com/company/gladstone-search/"
-									target="_blank"
-									rel="noreferrer"
-								>
-									<Icon name="linkedin" />
-								</a>
 							</div>
-							<p className="mt-16 text-xs font-medium tracking-widest uppercase">
+							<a
+								className="block w-max mx-auto mt-8 transition-transform hover:-translate-y-0.5"
+								href="https://www.linkedin.com/company/gladstone-search/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<Icon name="linkedin" />
+							</a>
+							<p className="mt-6 text-xs font-medium tracking-widest uppercase">
 								Copyright © 2022 Gladstone tous droits réservés
 								| Design{" "}
 								<a
