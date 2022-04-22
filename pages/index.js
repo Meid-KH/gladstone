@@ -22,6 +22,19 @@ export default function Home() {
 	// console.log(Cubes.src);
 	return (
 		<>
+			<Head>
+				<title>Conseil en recrutement Juridique | Gladstone</title>
+				<meta
+					name="description"
+					content="Nous accompagnons les cabinets d'avocats, les directions juridiques, les banques et les fonds d'investissement dans le renforcement de leurs équipes juridiques en France et à l'international"
+				/>
+				<meta itemprop="name" content="Gladstone" />
+				<meta
+					itemprop="description"
+					content="Nous accompagnons les cabinets d'avocats, les directions juridiques, les banques et les fonds d'investissement dans le renforcement de leurs équipes juridiques en France et à l'international"
+				/>
+				<meta itemprop="image" content="/gladstone-favicon.png" />
+			</Head>
 			<Intro />
 			<Activity />
 			<OurApproach />
@@ -225,7 +238,7 @@ const OurApproach = () => {
 					/>
 				</ArticleRow>
 				<ArticleRow className="mt-12 lg:mt-28">
-					<div>
+					<div className="text-justify">
 						<div className="mb-6 lg:mb-12">
 							<LinedTitle>
 								<h3>Implication</h3>
@@ -268,8 +281,8 @@ const OurApproach = () => {
 									connaissance approfondie du marché
 								</strong>
 								. Nous suivons certains de nos candidats depuis
-								plus de 10 ans. Beaucoup deviennent nos clients
-								!
+								plus de 10 ans. Beaucoup deviennent nos
+								clients&nbsp;!
 							</p>
 						</div>
 						<div className="mb-6 lg:mb-12">
@@ -290,18 +303,16 @@ const OurApproach = () => {
 						</div>
 					</div>
 
-					<div>
+					<div className="text-justify">
 						<div className="mb-6 lg:mb-12">
 							<LinedTitle>
 								<h3>Recherche ciblee</h3>
 							</LinedTitle>
 							<p>
 								Nous cherchons, véritablement. Nous procédons
-								par
-								<strong>approche directe</strong> avec les
+								par <strong>approche directe</strong> avec les
 								candidats qui nous semblent vous correspondre.
-								Notre
-								<strong>solide réseau</strong> nous permet
+								Notre <strong>solide réseau</strong> nous permet
 								également de vous proposer une{" "}
 								<strong>
 									sélection ciblée de profils afin de vous
@@ -381,7 +392,7 @@ const Team = () => {
 					<Title className="mb-12 lg:mb-20">Équipe</Title>
 				</div>
 				<ArticleRow>
-					<div>
+					<div className="text-justify">
 						<Image
 							className="max-w-full"
 							src={Yasmine.src}
@@ -414,12 +425,12 @@ const Team = () => {
 						</p>
 						<p>
 							Yasmine rencontre Hanna chez Fox Rodney. Elles
-							travaillent ensemble 6 ans avant de s’associer au
+							travaillent ensemble 6 ans avant de s'associer au
 							sein de GLADSTONE.
 						</p>
 					</div>
 
-					<div>
+					<div className="text-justify">
 						<Image
 							className="max-w-full"
 							src={Hanna.src}
@@ -505,7 +516,7 @@ const Contact = () => {
 							<LinedTitle className="text-center before:-translate-x-1/2 before:!left-1/2">
 								Yasmine khouri
 							</LinedTitle>
-							<p className="space-y-3">
+							<p className="!mb-4 space-y-1.5">
 								<strong className="block">
 									Associée fondatrice
 								</strong>
@@ -534,7 +545,7 @@ const Contact = () => {
 								<a
 									className="transition-transform hover:-translate-y-0.5"
 									download
-									href="/files/pdf-file.pdf"
+									href="/files/Gladstone.Yasmine-Khouri.vcf"
 								>
 									<Icon name="contact" className="!w-8" />
 								</a>
@@ -545,7 +556,7 @@ const Contact = () => {
 							<LinedTitle className="text-center before:-translate-x-1/2 before:!left-1/2">
 								Hanna ehrlich
 							</LinedTitle>
-							<p className="space-y-3">
+							<p className="space-y-2 !mb-4">
 								<strong className="block">
 									Associée fondatrice
 								</strong>
@@ -574,7 +585,7 @@ const Contact = () => {
 								<a
 									className="transition-transform hover:-translate-y-0.5"
 									download
-									href="/files/pdf-file.pdf"
+									href="/files/Gladstone.Hanna-Ehrlich.vcf"
 								>
 									<Icon name="contact" className="!w-8" />
 								</a>

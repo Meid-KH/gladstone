@@ -43,7 +43,7 @@ const ScrollTop = () => {
 		<button
 			className={`${
 				!showScrollTop && "hidden"
-			} fixed w-12 h-12 p-2 transition-transform border-2 rounded-full border-secondary bg-primary text-secondary right-8 bottom-8 hover:scale-95`}
+			} fixed w-12 h-12 p-2 transition-transform border rounded-full border-secondary bg-primary text-secondary right-8 bottom-8 hover:scale-95`}
 			onClick={() => {
 				document.body.scrollIntoView({
 					behavior: "smooth",

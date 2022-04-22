@@ -21,7 +21,7 @@
 	}
 	p,
 	.content ul {
-		@apply leading-[1.725] tracking-wider font-extralight;
+		@apply leading-[1.725] tracking-[0.07em] font-extralight;
 	}
 	p:not(:last-child),
 	.content ul:not(:last-child) {

@@ -61,7 +61,9 @@ const Header = () => {
 			}
 
 			// scrollPos < -window.innerHeight
-			scrollPos < -1000 ? setShowLogo(true) : setShowLogo(false);
+			scrollPos < -window.innerHeight
+				? setShowLogo(true)
+				: setShowLogo(false);
 
 			setScrollPos(document.body.getBoundingClientRect().top);
 		}
@@ -149,7 +151,7 @@ const MenuItem = ({ link, label, className = "", ...rest }) => {
 	return (
 		<Link href={link}>
 			<a
-				className={`relative font-light tracking-wide leading-none underline-offset-4 py-2.5 px-4__ rounded-lg 
+				className={`relative font-light tracking-wider leading-none underline-offset-4 py-2.5 px-4__ rounded-lg 
         before:content-[''] before:h-[1px] before:w-full before:bg-current before:absolute before:bottom-0 before:duration-200 before:left-0 before:scale-x-0 before:origin-right before:transition-transform
         hover:before:scale-100 hover:before:origin-left
         ${className} ${Router.pathname == "/" && "font-medium"}`}
@@ -177,16 +179,21 @@ const Menu = ({ open }) => {
 					<MenuItem link={item?.url} label={item?.label} />
 				</motion.div>
 			))}
-			<div className="flex items-center divide-x divide-gray-400">
+			<div className="flex items-center divide-x__ divide-gray-400__">
 				<motion.div variants={AnimChild}>
 					<MenuItem
 						link={"/"}
 						label={"FR"}
-						className="mr-2 font-bold"
+						className="mr-2 font-semibold"
 					/>
 				</motion.div>
+				l
 				<motion.div variants={AnimChild}>
-					<MenuItem link={"#en"} label={"EN"} className="ml-2" />
+					<MenuItem
+						link={"#en"}
+						label={"EN"}
+						className="ml-2 !tracking-widest"
+					/>
 				</motion.div>
 			</div>
 		</motion.nav>

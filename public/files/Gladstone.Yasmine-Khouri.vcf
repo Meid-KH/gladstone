@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 11.6.4//EN
+N:;Yasmine Khouri;;;
+FN:Yasmine Khouri
+ORG:Gladstone;
+EMAIL;type=INTERNET;type=HOME;type=pref:yasmine.khouri@gladstone-search.com
+TEL;type=pref:+33 6 14 42 23 84
+ADR;type=WORK;type=pref:;;16 COURS ALBERT 1ER;PARIS;;75008;
+END:VCARD
