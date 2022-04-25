@@ -229,7 +229,7 @@ const OurApproach = () => {
 						</Title>
 					</div>
 					<Image
-						className="rounded"
+						className="rounded__"
 						src={ApproachImg}
 						width={417}
 						height={373}
