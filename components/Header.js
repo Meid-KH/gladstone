@@ -153,7 +153,7 @@ const MenuItem = ({ link, label, className = "", ...rest }) => {
 	const NavigateToContent = async (e) => {
 		let elem = document.querySelector(e.target.hash);
 		e.preventDefault();
-		elem.scrollIntoView({
+		elem?.scrollIntoView({
 			behavior: "smooth",
 			block: "start",
 			// top: "-500px",
@@ -190,7 +190,7 @@ const Menu = ({ open }) => {
 		>
 			{/* Close button */}
 			<button
-				className="lg:hidden !w-10 h-10 p-1 absolute block border-2 rounded-full right-4 top-4 opacity-70 focus:opacity-100"
+				className="lg:hidden !w-12 h-12 p-2 absolute block border-2 rounded-full right-4 top-4 opacity-70 focus:opacity-100"
 				onClick={() => setOpenMenu(false)}
 			>
 				<Icon name="close" className="!w-full" />
