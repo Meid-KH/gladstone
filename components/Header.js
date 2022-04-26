@@ -123,7 +123,7 @@ const MenuHamburger = () => {
 
 	const handleMobileMenu = () => {
 		toggleMenu();
-		console.log("Menu clicked");
+		// console.log("Menu clicked");
 	};
 	return (
 		<div className="flex gap-3 lg:hidden">
