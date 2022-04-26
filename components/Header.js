@@ -9,6 +9,7 @@ import Logo from "./Logo";
 import { MainContext } from "./Layout";
 import { ColorContext } from "../context/ColorContext";
 import { MenuContext } from "../context/MenuContext";
+import Icon from "./ui/Icon";
 
 const MENU_ITEMS = [
 	{
@@ -55,6 +56,17 @@ const Header = () => {
 	// console.log(openMenu);
 
 	React.useEffect(() => {
+		if (openMenu) {
+			document.body.classList.add("overflow-y-hidden", "overlay");
+		} else {
+			document.body.classList.remove("overflow-y-hidden", "overlay");
+		}
+
+		return () =>
+			document.body.classList.remove("overflow-y-hidden", "overlay");
+	}, [openMenu]);
+
+	React.useEffect(() => {
 		function handleScroll() {
 			if (document.body.getBoundingClientRect().top > scrollPos) {
 				// setSticky(true);
@@ -71,26 +83,23 @@ const Header = () => {
 			setScrollPos(document.body.getBoundingClientRect().top);
 		}
 		window.addEventListener("scroll", handleScroll, false);
-
-		// console.log(scrollPos);
-
 		return () => window.removeEventListener("scroll", handleScroll, false);
 	}, [scrollPos]);
 
 	return (
 		<header
-			className={`grid place-items-center px-8 transition-transform duration-500 
+			className={`grid place-items-center px-4 md:px-8 py-4 md:py-6 transition-transform duration-500 
       ${
 			sticky
 				? "sticky z-50 top-0 bg-gradient-to-b from-primary/40 to-transparent backdrop-blur"
 				: ""
 		}
-      ${showLogo ? "py-6 border-b border-secondary/20" : "py-6 min-h-[113px]"}
+      ${showLogo ? "border-b border-secondary/20" : "lg:min-h-[113px]"}
     `}
 		>
 			<div className="w-full">
 				<div
-					className={`flex-1 flex gap-8 items-center transition-all ${
+					className={`flex-1 flex gap-16 items-center transition-all ${
 						!showLogo
 							? "justify-end lg:justify-center"
 							: "justify-between"
@@ -108,7 +117,7 @@ const Header = () => {
 const Gladstone = ({ show }) => (
 	<Link href={"/"}>
 		<motion.a
-			className={`flex-shrink-0 block w-[120px] ${!show && "hidden"}`}
+			className={`flex-shrink-0 block w-[150px] ${!show && "hidden"}`}
 			initial={{ y: -10, scale: 0.95, opacity: 0 }}
 			animate={{ y: 0, scale: 1, opacity: 1 }}
 			transition={{ duration: 0.25 }}
@@ -122,7 +131,7 @@ const MenuHamburger = () => {
 	const { toggleMenu, setOpenMenu } = React.useContext(MenuContext);
 
 	const handleMobileMenu = () => {
-		toggleMenu();
+		setOpenMenu(true);
 		// console.log("Menu clicked");
 	};
 	return (
@@ -154,7 +163,7 @@ const MenuItem = ({ link, label, className = "", ...rest }) => {
 	return (
 		<Link href={link}>
 			<a
-				className={`relative font-light tracking-wider leading-none underline-offset-4 py-2.5 px-4__ rounded-lg 
+				className={`block w-max relative font-light tracking-wider leading-none underline-offset-4 py-2.5 px-4__ rounded-lg 
         before:content-[''] before:h-[1px] before:w-full before:bg-current before:absolute before:bottom-0 before:duration-200 before:left-0 before:scale-x-0 before:origin-right before:transition-transform
         hover:before:scale-100 hover:before:origin-left
         ${className} ${Router.pathname == "/" && "font-medium"}`}
@@ -168,15 +177,24 @@ const MenuItem = ({ link, label, className = "", ...rest }) => {
 };
 
 const Menu = ({ open }) => {
+	const { setOpenMenu } = React.useContext(MenuContext);
+
 	return (
 		<motion.nav
-			className={`fixed top-0 left-0 z-50 flex flex-col h-screen max-w-full gap-3 px-8 py-10 bg-black 
-      lg:h-auto lg:items-center lg:justify-between lg:w-full lg:max-w-4xl lg:flex-row lg:static w-80 lg:p-0 lg:bg-transparent transition
+			className={`fixed top-0 left-0 z-50 flex flex-col h-screen max-w-full gap-3 px-8 py-10 pt-20 bg-black/75 border-secondary/10 rounded-lg
+      lg:border-0 lg:h-auto lg:items-center lg:justify-between lg:w-full lg:max-w-4xl__ lg:flex-row lg:static w-80 lg:p-0 lg:bg-transparent transition
       ${!open && "-translate-x-full lg:translate-x-0"}`}
 			variants={AnimParent}
 			initial="hidden"
 			animate="show"
 		>
+			{/* Close button */}
+			<button
+				className="lg:hidden !w-10 h-10 p-1 absolute block border-2 rounded-full right-4 top-4 opacity-70 focus:opacity-100"
+				onClick={() => setOpenMenu(false)}
+			>
+				<Icon name="close" className="!w-full" />
+			</button>
 			{MENU_ITEMS?.map((item, index) => (
 				<motion.div key={index} variants={AnimChild}>
 					<MenuItem link={item?.url} label={item?.label} />

@@ -11,6 +11,12 @@
 	body {
 		@apply font-main bg-primary text-secondary overscroll-x-none;
 	}
+	body.overlay {
+		@apply relative;
+	}
+	body.overlay::before {
+		@apply content-[''] absolute inset-0 z-30 bg-primary/20 backdrop-blur-sm;
+	}
 	h1,
 	h2,
 	h3,

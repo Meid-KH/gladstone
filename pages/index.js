@@ -69,10 +69,10 @@ const Intro = () => (
 				Conseil en Recrutement Juridique
 			</h1>
 		</motion.div>
-		<div className="absolute left-0 top-1/2 -z-10">
+		<div className="max-w-[35vw] absolute left-0 top-1/2 -z-10">
 			<img src={CubeLeft?.src} alt="Cube Left" />
 		</div>
-		<div className="absolute right-0 top-1/4 -z-10">
+		<div className="max-w-[35vw] absolute right-0 top-1/4 -z-10">
 			<img src={CubeRight?.src} alt="Cube Right" />
 		</div>
 	</section>
@@ -103,7 +103,7 @@ const Activity = () => {
 			<div className="container-sm">
 				<div className="text-center">
 					<Title>Activité</Title>
-					<p className="mx-auto text-lg tracking-wider lg:max-w-2xl">
+					<p className="mx-auto lg:max-w-2xl__ xl:px-16">
 						GLADSTONE est un cabinet d'Executive Search spécialisé
 						dans le recrutement juridique qui accompagne les
 						cabinets d'avocats, les directions juridiques, les
@@ -111,9 +111,8 @@ const Activity = () => {
 						renforcement de leurs équipes juridiques. Nos
 						recrutements portent sur des postes nécessitant une
 						connaissance du droit français, tant en France qu'à
-						l'étranger. <br />
-						Nous travaillons indifféremment en français ou en
-						anglais.
+						l'étranger. Nous travaillons indifféremment en français
+						ou en anglais.
 					</p>
 				</div>
 
@@ -188,8 +187,8 @@ const Activity = () => {
 						</LinedTitle>
 						<p>
 							GLADSTONE accompagne les{" "}
-							<strong>avocats et les juristes</strong>
-							souhaitant discuter de leur{" "}
+							<strong>avocats et les juristes</strong> souhaitant
+							discuter de leur{" "}
 							<strong>projet professionnel</strong>. Nous sommes
 							là pour vous permettre d'avoir une vision
 							approfondie du marché, vous conseiller et vous
@@ -359,10 +358,10 @@ const OurApproach = () => {
 			</div>
 
 			{/* Cubes */}
-			<div className="absolute left-0 top-1/4 -translate-y-1/4 -z-10">
+			<div className="max-w-[35vw] absolute left-0 top-1/4 -translate-y-1/4 -z-10">
 				<img src={CubeLeft?.src} alt="Cube Left" />
 			</div>
-			<div className="absolute top-0 right-0 -translate-y-1/4 -z-10">
+			<div className="max-w-[35vw] absolute top-0 right-0 -translate-y-1/4 -z-10">
 				<img src={CubeRight?.src} alt="Cube Right" />
 			</div>
 		</motion.section>
@@ -469,10 +468,10 @@ const Team = () => {
 			</div>
 
 			{/* Cubes */}
-			<div className="absolute left-0 -translate-y-1/2 top-1/4 -z-10">
+			<div className="max-w-[35vw] absolute left-0 -translate-y-1/2 top-1/4 -z-10">
 				<img src={CubeLeft?.src} alt="Cube Left" />
 			</div>
-			<div className="absolute top-0 right-0 -translate-y-1/2 -z-10">
+			<div className="max-w-[35vw] absolute top-0 right-0 -translate-y-1/2 -z-10">
 				<img src={CubeRight?.src} alt="Cube Right" />
 			</div>
 		</motion.section>
@@ -547,7 +546,7 @@ const Contact = () => {
 									download
 									href="/files/Gladstone.Yasmine-Khouri.vcf"
 								>
-									<Icon name="contact" className="!w-8" />
+									<Icon name="contact" className="!w-9" />
 								</a>
 							</div>
 						</div>
@@ -587,7 +586,7 @@ const Contact = () => {
 									download
 									href="/files/Gladstone.Hanna-Ehrlich.vcf"
 								>
-									<Icon name="contact" className="!w-8" />
+									<Icon name="contact" className="!w-9" />
 								</a>
 							</div>
 						</div>
