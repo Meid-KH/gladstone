@@ -7,6 +7,8 @@ import Link from "next/link";
 import { Router } from "next/router";
 import Logo from "./Logo";
 import { MainContext } from "./Layout";
+import { ColorContext } from "../context/ColorContext";
+import { MenuContext } from "../context/MenuContext";
 
 const MENU_ITEMS = [
 	{
@@ -49,7 +51,8 @@ const Header = () => {
 	const [scrollPos, setScrollPos] = React.useState(0);
 	const [showLogo, setShowLogo] = React.useState(false);
 
-	const MenuOpen = React.useContext(MainContext);
+	const { openMenu } = React.useContext(MenuContext);
+	// console.log(openMenu);
 
 	React.useEffect(() => {
 		function handleScroll() {
@@ -74,24 +77,27 @@ const Header = () => {
 		return () => window.removeEventListener("scroll", handleScroll, false);
 	}, [scrollPos]);
 
-	console.log(MenuOpen?.menuOpen);
-
 	return (
 		<header
-			className={`grid place-items-center px-8 py-6 transition-all duration-500 min-h-[113px] ${
-				sticky
-					? "sticky z-50 top-0 bg-gradient-to-b from-primary/40 to-transparent backdrop-blur"
-					: ""
-			}`}
+			className={`grid place-items-center px-8 transition-transform duration-500 
+      ${
+			sticky
+				? "sticky z-50 top-0 bg-gradient-to-b from-primary/40 to-transparent backdrop-blur"
+				: ""
+		}
+      ${showLogo ? "py-6 border-b border-secondary/20" : "py-6 min-h-[113px]"}
+    `}
 		>
 			<div className="w-full">
 				<div
 					className={`flex-1 flex gap-8 items-center transition-all ${
-						!showLogo ? "justify-center" : "justify-between"
+						!showLogo
+							? "justify-end lg:justify-center"
+							: "justify-between"
 					}`}
 				>
 					<Gladstone show={showLogo} />
-					<Menu open={MenuOpen} />
+					<Menu open={openMenu} />
 					<MenuHamburger />
 				</div>
 			</div>
@@ -102,7 +108,7 @@ const Header = () => {
 const Gladstone = ({ show }) => (
 	<Link href={"/"}>
 		<motion.a
-			className={`flex-shrink-0 block w-48 ${!show && "hidden"}`}
+			className={`flex-shrink-0 block w-[120px] ${!show && "hidden"}`}
 			initial={{ y: -10, scale: 0.95, opacity: 0 }}
 			animate={{ y: 0, scale: 1, opacity: 1 }}
 			transition={{ duration: 0.25 }}
@@ -113,11 +119,11 @@ const Gladstone = ({ show }) => (
 );
 
 const MenuHamburger = () => {
-	const [menuOpen, setMenuOpen] = React.useState(false);
+	const { toggleMenu, setOpenMenu } = React.useContext(MenuContext);
 
 	const handleMobileMenu = () => {
-		console.log("Menu clocked");
-		setMenuOpen(!menuOpen);
+		toggleMenu();
+		console.log("Menu clicked");
 	};
 	return (
 		<div className="flex gap-3 lg:hidden">
@@ -138,9 +144,6 @@ const MenuItem = ({ link, label, className = "", ...rest }) => {
 	const NavigateToContent = async (e) => {
 		let elem = document.querySelector(e.target.hash);
 		e.preventDefault();
-		// console.log(e.target.hash)
-
-		// 1. Use some state to update header aswell
 		elem.scrollIntoView({
 			behavior: "smooth",
 			block: "start",
@@ -169,7 +172,7 @@ const Menu = ({ open }) => {
 		<motion.nav
 			className={`fixed top-0 left-0 z-50 flex flex-col h-screen max-w-full gap-3 px-8 py-10 bg-black 
       lg:h-auto lg:items-center lg:justify-between lg:w-full lg:max-w-4xl lg:flex-row lg:static w-80 lg:p-0 lg:bg-transparent transition
-      ${!open && "-translate-x-full"}`}
+      ${!open && "-translate-x-full lg:translate-x-0"}`}
 			variants={AnimParent}
 			initial="hidden"
 			animate="show"

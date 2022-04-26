@@ -1,20 +1,30 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import { MenuContext, MenuContextProvider } from "../context/MenuContext";
 
 export const MainContext = React.createContext({
-	menuOpen: false,
+	menuOpen: null,
+	OpenMenu: () => {
+		menuOpen: true;
+	},
+	CloseMenu: () => {
+		menuOpen: false;
+	},
+	testMenu: () => {
+		console.log("text Menu");
+	},
 });
+
 const Layout = ({ children }) => {
-	console.log(MainContext.menuOpen);
 	return (
 		<>
-			<MainContext.Provider value={MainContext}>
+			<MenuContextProvider>
 				<Header />
 				<div className="min-h-[85vh] ">{children}</div>
 				<Footer />
 				<ScrollTop />
-			</MainContext.Provider>
+			</MenuContextProvider>
 		</>
 	);
 };
