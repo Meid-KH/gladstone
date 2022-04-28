@@ -94,7 +94,7 @@ const Header = () => {
 				? "sticky z-50 top-0 bg-gradient-to-b from-primary/40 to-transparent backdrop-blur"
 				: ""
 		}
-      ${showLogo ? "border-b border-secondary/20" : "lg:min-h-[113px]"}
+      ${showLogo ? "py-3" : "lg:min-h-[113px]"}
     `}
 		>
 			<div className="w-full">
@@ -181,7 +181,7 @@ const Menu = ({ open }) => {
 
 	return (
 		<motion.nav
-			className={`fixed top-0 left-0 z-50 flex flex-col h-screen max-w-full gap-3 px-8 py-10 pt-20 bg-black/75 border-secondary/10 rounded-lg
+			className={`fixed top-0 left-0 z-50 flex flex-col h-screen max-w-full gap-3 px-6 lg:px-20 py-10 pt-20 bg-black/75 border-secondary/10 rounded-lg
       lg:border-0 lg:h-auto lg:items-center lg:justify-between lg:w-full lg:max-w-4xl__ lg:flex-row lg:static w-80 lg:p-0 lg:bg-transparent transition
       ${!open && "-translate-x-full lg:translate-x-0"}`}
 			variants={AnimParent}
