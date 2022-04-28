@@ -400,6 +400,14 @@ const Team = () => {
 							objectFit="cover"
 							quality={100}
 						/>
+						{/* <img
+							className="max-w-full"
+							src={Yasmine.src}
+							// width={417}
+							// height={376}
+							// objectFit="cover"
+							// quality={100}
+						/> */}
 						<LinedTitle className="mt-8 text-2xl lg:mt-12">
 							<h3>Yasmine khouri</h3>
 						</LinedTitle>

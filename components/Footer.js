@@ -23,7 +23,7 @@ const Footer = () => {
 					</svg>
 					<div className="absolute inset-0 grid place-items-center">
 						<div className="max-w-lg mx-auto text-center lg:max-w-xl">
-							<div className="flex flex-col gap-3 mt-20 text-xs tracking-wide lg:tracking-[0.1em] uppercase">
+							<div className="flex flex-col gap-3 mt-20 text-xs tracking-[0.25em] font-medium uppercase">
 								<span>Gladstone</span>
 								<span>16 Cours Albert 1er 75008 Paris</span>
 								<Link href="/politique-de-confidentialite">
@@ -45,7 +45,7 @@ const Footer = () => {
 							>
 								<Icon name="linkedin" />
 							</a>
-							<p className="pb-3 mt-6 text-xs font-medium tracking-widest uppercase">
+							<p className="pb-3 mt-6 text-xs font-normal tracking-widest uppercase">
 								Copyright © 2022 Gladstone tous droits réservés
 								| Design{" "}
 								<a
