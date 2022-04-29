@@ -349,7 +349,7 @@ const OurApproach = () => {
 								est de créer des relations durables et de
 								confiance avec nos clients et nos candidats. Ce
 								que vous partagez avec nous est traité avec la
-								plus grande
+								plus grande{" "}
 								<strong>discrétion et confidentialité</strong>.
 							</p>
 						</div>

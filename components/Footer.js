@@ -23,15 +23,17 @@ const Footer = () => {
 					</svg>
 					<div className="absolute inset-0 grid place-items-center">
 						<div className="max-w-lg mx-auto text-center lg:max-w-xl">
-							<div className="flex flex-col gap-3 mt-20 text-xs tracking-[0.25em] font-medium uppercase">
-								<span>Gladstone</span>
+							<div className="flex flex-col gap-3 mt-20 text-xs tracking-[0.25em] font-medium">
+								<span className="uppercase tracking-[0.35em]">
+									Gladstone
+								</span>
 								<span>16 Cours Albert 1er 75008 Paris</span>
 								<Link href="/politique-de-confidentialite">
 									<a className="underline-offset-2 hover:underline">
 										Politique de confidentialité{" "}
 									</a>
 								</Link>
-								<Link href="/">
+								<Link href="/mentions-legales">
 									<a className="underline-offset-2 hover:underline">
 										Mentions légales
 									</a>
