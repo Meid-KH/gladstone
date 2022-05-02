@@ -4,7 +4,7 @@ import Icon from "./ui/Icon";
 
 const Footer = () => {
 	return (
-		<footer className="pt-16 xl:pt-40__">
+		<footer className="pt-16__ xl:pt-40__">
 			<div className="container">
 				<div className="relative mx-auto max-full w-6xl">
 					<svg

@@ -125,7 +125,9 @@ const Header = ({ basic = false }) => {
 const Gladstone = ({ show }) => (
 	<Link href={"/"}>
 		<motion.a
-			className={`flex-shrink-0 block w-[151px] ${!show && "hidden"}`}
+			className={`cursor-pointer flex-shrink-0 block w-[151px] ${
+				!show && "hidden"
+			}`}
 			initial={{ y: -10, scale: 0.95, opacity: 0 }}
 			animate={{ y: 0, scale: 1, opacity: 1 }}
 			transition={{ duration: 0.45 }}
