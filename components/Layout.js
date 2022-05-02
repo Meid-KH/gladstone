@@ -1,4 +1,6 @@
 import React from "react";
+import { useRouter } from "next/router";
+
 import Header from "./Header";
 import Footer from "./Footer";
 import { MenuContext, MenuContextProvider } from "../context/MenuContext";
@@ -17,15 +19,20 @@ export const MainContext = React.createContext({
 });
 
 const Layout = ({ children }) => {
+	const router = useRouter();
+	console.log(router.pathname);
+
 	return (
-		<>
+		<div className="overflow-x-hidden__">
 			<MenuContextProvider>
-				<Header />
-				<div className="min-h-[85vh] ">{children}</div>
+				<Header basic={router.pathname == "/" ? false : true} />
+				<div className="min-h-[85vh] overflow-hidden pb-24">
+					{children}
+				</div>
 				<Footer />
 				<ScrollTop />
 			</MenuContextProvider>
-		</>
+		</div>
 	);
 };
 

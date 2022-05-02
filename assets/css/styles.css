@@ -59,7 +59,7 @@
 		@apply mx-auto max-w-[calc(938px+theme(padding.4))] px-4;
 	}
 	.radial-shadow {
-		@apply relative before:content-[''] before:lg:min-h-[calc(100vh-theme(height.10))] before:absolute before:inset-0 before:opacity-50 before:-z-10;
+		@apply relative before:content-[''] before:max-h-[100vh] before:lg:min-h-[calc(100vh-theme(height.10))] before:absolute before:inset-0 before:opacity-50 before:-z-10;
 	}
 	.radial-shadow::before {
 		background: radial-gradient(

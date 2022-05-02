@@ -21,7 +21,7 @@ import Hanna from "../assets/img/hanna-ehrlich.png";
 export default function Home() {
 	// console.log(Cubes.src);
 	return (
-		<>
+		<div>
 			<Head>
 				<title>Conseil en recrutement Juridique | Gladstone</title>
 				<meta
@@ -40,7 +40,7 @@ export default function Home() {
 			<OurApproach />
 			<Team />
 			<Contact />
-		</>
+		</div>
 	);
 }
 
@@ -51,28 +51,30 @@ const sectionVariants = {
 
 const Intro = () => (
 	<section
-		className="relative h-[calc(100vh-theme(height.28))] grid place-items-center radial-shadow"
+		className="relative h-[calc(100vh-theme(height.28))] grid place-items-center radial-shadow before:top-1/2 before:-translate-y-1/2 before:scale-[2] lg:before:top-0 lg:before:translate-y-0 lg:before:scale-100"
 		// style={{
 		// 	backgroundImage: `url(${Cubes?.src})`,
 		// }}
 	>
 		<motion.div
-			className="relative p-6 space-y-6 text-center lg:-translate-y-20"
+			className="relative p-6 text-center "
 			initial={{ y: 20, scale: 0.95, opacity: 0 }}
 			animate={{ y: 0, scale: 1, opacity: 1 }}
-			transition={{ duration: 0.85 }}
+			transition={{ duration: 1.25 }}
 		>
-			<div className="max-w-full mx-auto w-60">
-				<Logo />
+			<div className="space-y-6 -translate-y-8">
+				<div className="max-w-full mx-auto w-60">
+					<Logo />
+				</div>
+				<h1 className="inline-block uppercase text-xs tracking-[0.2em]">
+					Conseil en Recrutement Juridique
+				</h1>
 			</div>
-			<h1 className="inline-block uppercase text-xs tracking-[0.2em]">
-				Conseil en Recrutement Juridique
-			</h1>
 		</motion.div>
-		<div className="max-w-[35vw] absolute left-0 top-1/2 -z-10">
+		<div className="max-w-[35vw] absolute left-0 top-1/2 -z-10 translate-y-12 lg:translate-y-0">
 			<img src={CubeLeft?.src} alt="Cube Left" />
 		</div>
-		<div className="max-w-[35vw] absolute right-0 top-1/4 -z-10">
+		<div className="max-w-[35vw] absolute right-0 bottom-0 lg:top-1/4 -z-10 translate-y-48 lg:translate-y-0">
 			<img src={CubeRight?.src} alt="Cube Right" />
 		</div>
 	</section>
@@ -93,7 +95,7 @@ const Activity = () => {
 	return (
 		<motion.section
 			id="activity"
-			className="relative py-16 lg:py-20"
+			className="relative py-16 lg:py-20 radial-shadow before:top-1/2 before:-translate-y-1/2 before:scale-150 lg:before:hidden"
 			ref={ref}
 			animate={controls}
 			initial="hidden"
@@ -198,6 +200,13 @@ const Activity = () => {
 					</div>
 				</ArticleRow>
 			</div>
+
+			<div className="lg:hidden max-w-[35vw] absolute left-0 top-1/2 -z-10 translate-y-28">
+				<img src={CubeLeft?.src} alt="Cube Left" />
+			</div>
+			<div className="lg:hidden max-w-[35vw] absolute right-0 top-1/2 -z-10 translate-y-44">
+				<img src={CubeRight?.src} alt="Cube Right" />
+			</div>
 		</motion.section>
 	);
 };
@@ -214,7 +223,7 @@ const OurApproach = () => {
 	return (
 		<motion.section
 			id="our-approach"
-			className="relative py-16 radial-shadow before:-translate-y-1/4 lg:py-20"
+			className="relative py-16 lg:py-20 radial-shadow before:-translate-y-1/4 before:scale-150"
 			ref={ref}
 			animate={controls}
 			initial="hidden"
@@ -223,7 +232,7 @@ const OurApproach = () => {
 			<div className="relative container-sm">
 				<ArticleRow>
 					<div className="grid place-items-center">
-						<Title className="m-0 text-center">
+						<Title className="m-0 !mb-24 text-center lg:mb-8">
 							Notre <br /> approche
 						</Title>
 					</div>
@@ -358,10 +367,10 @@ const OurApproach = () => {
 			</div>
 
 			{/* Cubes */}
-			<div className="max-w-[35vw] absolute left-0 top-1/4 -translate-y-1/4 -z-10">
+			<div className="max-w-[35vw] absolute left-0 top-0 lg:top-1/4 -translate-y-8 lg:-translate-y-1/4 -z-10">
 				<img src={CubeLeft?.src} alt="Cube Left" />
 			</div>
-			<div className="max-w-[35vw] absolute top-0 right-0 -translate-y-1/4 -z-10">
+			<div className="max-w-[35vw] absolute top-28 lg:top-0 right-0 lg:-translate-y-1/4 -z-10">
 				<img src={CubeRight?.src} alt="Cube Right" />
 			</div>
 		</motion.section>
@@ -380,7 +389,7 @@ const Team = () => {
 	return (
 		<motion.section
 			id="team"
-			className="relative py-16 radial-shadow before:-top-1/2 lg:py-20"
+			className="relative py-16 lg:py-20 radial-shadow before:max-h-[50vh] before:top-0 before:-translate-y-36 before:scale-150 lg:scale-100 lg:before:-top-1/2"
 			ref={ref}
 			animate={controls}
 			initial="hidden"
@@ -388,12 +397,12 @@ const Team = () => {
 		>
 			<div className="relative container-sm">
 				<div className="text-center">
-					<Title className="mb-12 lg:mb-20">Équipe</Title>
+					<Title className="mb-32 lg:mb-20">Équipe</Title>
 				</div>
 				<ArticleRow>
 					<div className="text-justify">
 						<Image
-							className="max-w-full"
+							className="max-w-full -mx-4"
 							src={Yasmine.src}
 							width={417}
 							height={376}
@@ -476,10 +485,10 @@ const Team = () => {
 			</div>
 
 			{/* Cubes */}
-			<div className="max-w-[35vw] absolute left-0 -translate-y-1/2 top-1/4 -z-10">
+			<div className="hidden lg:block max-w-[35vw] absolute left-0 -translate-y-1/2 top-1/4 -z-10">
 				<img src={CubeLeft?.src} alt="Cube Left" />
 			</div>
-			<div className="max-w-[35vw] absolute top-0 right-0 -translate-y-1/2 -z-10">
+			<div className="max-w-[35vw] absolute top-16 lg:top-0 right-0 -translate-y-1/2__ -z-10">
 				<img src={CubeRight?.src} alt="Cube Right" />
 			</div>
 		</motion.section>
