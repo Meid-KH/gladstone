@@ -89,13 +89,13 @@ const Header = ({ basic = false }) => {
 	if (basic) {
 		return (
 			<header className="sticky top-0 z-50 grid px-4 py-4 transition-transform duration-500 place-items-center md:px-8 md:py-6 bg-gradient-to-b from-primary/40 to-transparent backdrop-blur">
-				<Gladstone show={true} />
+				<Gladstone show={showLogo} />
 			</header>
 		);
 	} else {
 		return (
 			<header
-				className={`grid place-items-center px-4 md:px-8 py-4 md:py-6 transition-transform duration-500 
+				className={`min-h-[112px] grid place-items-center px-4 md:px-8 py-4 md:py-6 transition-transform duration-500 
         ${
 			sticky
 				? "sticky z-50 top-0 bg-gradient-to-b from-primary/40 to-transparent backdrop-blur"
@@ -104,7 +104,7 @@ const Header = ({ basic = false }) => {
         ${showLogo ? "py-3" : "lg:min-h-[113px]"}
       `}
 			>
-				<div className="w-full">
+				<div className="w-full h-full">
 					<div
 						className={`flex-1 flex gap-16 items-center transition-all ${
 							!showLogo
@@ -114,7 +114,7 @@ const Header = ({ basic = false }) => {
 					>
 						<Gladstone show={showLogo} />
 						<Menu open={openMenu} />
-						<MenuHamburger />
+						<MenuHamburger stick={sticky} />
 					</div>
 				</div>
 			</header>
@@ -137,22 +137,35 @@ const Gladstone = ({ show }) => (
 	</Link>
 );
 
-const MenuHamburger = () => {
-	const { toggleMenu, setOpenMenu } = React.useContext(MenuContext);
+const MenuHamburger = ({ stick }) => {
+	const { setOpenMenu } = React.useContext(MenuContext);
 
 	const handleMobileMenu = () => {
 		setOpenMenu(true);
 		// console.log("Menu clicked");
 	};
 	return (
-		<div className="absolute z-20 flex gap-3 lg:hidden left-4 top-4">
+		<div
+			className={`absolute z-20 flex gap-3 lg:hidden left-4 transition-transform duration-300 ${
+				stick ? "top-1/2 -translate-y-1/2" : "top-4"
+			}`}
+		>
 			<button
 				onClick={handleMobileMenu}
-				className="grid w-12 h-12 p-2 ml-auto rounded-lg place-items-center text-md text-secondary bg-primary focus:ring-2 focus:ring-secondary/50"
+				className="grid w-12 h-12 ml-auto rounded-lg place-items-center text-md text-secondary focus:ring-2 focus:ring-secondary/50"
 			>
-				<svg viewBox="0 0 40 15" fill="none">
-					<path d="M38.75 0H1.24997C0.559941 0 0 0.560046 0 1.24997C0 1.9399 0.560045 2.49995 1.24997 2.49995H38.75C39.4401 2.49995 40 1.9399 40 1.24997C40 0.560046 39.4401 0 38.75 0Z"></path>
-					<path d="M38.75 12.5H1.24997C0.559941 12.5 0 13.0601 0 13.75C0 14.4401 0.560045 15 1.24997 15H38.75C39.4401 15 40 14.4399 40 13.75C40.0001 13.06 39.4401 12.5 38.75 12.5Z"></path>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					strokeWidth={1}
+				>
+					<path
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						d="M4 6h16M4 12h16M4 18h16"
+					/>
 				</svg>
 			</button>
 		</div>
@@ -193,8 +206,10 @@ const Menu = ({ open }) => {
 
 	return (
 		<motion.nav
-			className={`fixed top-0 left-0 z-50 flex flex-col h-screen max-w-full gap-3 px-20 lg:px-20 py-10 pt-20 bg-[#0F0B3A] border-secondary/10 rounded-lg
-      lg:border-0 lg:h-auto lg:items-center lg:justify-between lg:w-full lg:max-w-4xl__ lg:flex-row lg:static w-80 lg:p-0 lg:bg-transparent transition
+			className={`fixed top-0 left-0 z-50 flex flex-col h-screen w-full gap-3 px-20 lg:px-20 py-10 pt-20 
+      bg-[url('../img/mobile-nav-bg.png')] bg-no-repeat bg-cover bg-bottom
+      border-secondary/10 rounded-lg
+      lg:border-0 lg:h-auto lg:items-center lg:justify-between lg:flex-row lg:static lg:p-0 lg:bg-transparent transition
       ${!open && "-translate-x-full lg:translate-x-0"}`}
 			variants={AnimParent}
 			initial="hidden"
