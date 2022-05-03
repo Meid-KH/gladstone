@@ -118,7 +118,7 @@ const Activity = () => {
 					</p>
 				</div>
 
-				<ArticleRow className="mt-12 lg:mt-28">
+				<ArticleRow className="mt-28">
 					<div className="text-justify">
 						<LinedTitle>
 							<h3>Cabinets d'avocats</h3>
@@ -395,9 +395,9 @@ const Team = () => {
 			initial="hidden"
 			variants={sectionVariants}
 		>
-			<div className="relative container-sm">
+			<div className="relative z-10 container-sm">
 				<div className="text-center">
-					<Title className="mb-32 lg:mb-20">Équipe</Title>
+					<Title className="!mb-32 lg:mb-20">Équipe</Title>
 				</div>
 				<ArticleRow>
 					<div className="text-justify">
@@ -485,7 +485,7 @@ const Team = () => {
 			</div>
 
 			{/* Cubes */}
-			<div className="hidden lg:block max-w-[35vw] absolute left-0 -translate-y-1/2 top-1/4 -z-10">
+			<div className="lg:block max-w-[35vw] absolute left-0 bottom-0 translate-y-12 lg:-translate-y-1/2 lg:top-1/4 z-0">
 				<img src={CubeLeft?.src} alt="Cube Left" />
 			</div>
 			<div className="max-w-[35vw] absolute top-16 lg:top-0 right-0 -translate-y-1/2__ -z-10">
@@ -516,7 +516,7 @@ const Contact = () => {
 	return (
 		<motion.section
 			id="contact"
-			className="relative py-16 radial-shadow before:-top-1/2 lg:py-20"
+			className="relative py-16 radial-shadow before:-top-1/2 lg:py-20 before:scale-150"
 			ref={ref}
 			animate={controls}
 			initial="hidden"
