@@ -146,8 +146,8 @@ const MenuHamburger = ({ stick }) => {
 	};
 	return (
 		<div
-			className={`absolute z-20 flex gap-3 lg:hidden left-4 transition-transform duration-300 ${
-				stick ? "top-1/2 -translate-y-1/2" : "top-4"
+			className={`absolute z-20 flex gap-3 lg:hidden left-4 ${
+				stick ? "top-4 top-1/2__ -translate-y-1/2__" : "top-4"
 			}`}
 		>
 			<button
