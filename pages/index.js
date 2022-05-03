@@ -516,7 +516,7 @@ const Contact = () => {
 	return (
 		<motion.section
 			id="contact"
-			className="relative py-16 radial-shadow before:-top-1/2 lg:py-20 before:scale-150"
+			className="relative py-16 radial-shadow before:-top-1/2 lg:py-20 before:scale-150 lg:before:scale-100"
 			ref={ref}
 			animate={controls}
 			initial="hidden"
