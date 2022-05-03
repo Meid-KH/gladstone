@@ -207,7 +207,7 @@ const Menu = ({ open }) => {
 	return (
 		<motion.nav
 			className={`fixed top-0 left-0 z-50 flex flex-col h-screen w-full gap-3 px-20 lg:px-20 py-10 pt-20 
-      bg-[url('../img/mobile-nav-bg.png')] bg-no-repeat bg-cover bg-bottom
+      bg-nav-pattern bg-no-repeat bg-cover bg-bottom
       border-secondary/10 rounded-lg
       lg:border-0 lg:h-auto lg:items-center lg:justify-between lg:flex-row lg:static lg:p-0 lg:bg-transparent transition
       ${!open && "-translate-x-full lg:translate-x-0"}`}

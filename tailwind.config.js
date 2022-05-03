@@ -5,6 +5,9 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			backgroundImage: (theme) => ({
+				"nav-pattern": "url('/mobile-nav-bg.png')",
+			}),
 			colors: {
 				transparent: "transparent",
 				current: "currentColor",
