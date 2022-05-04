@@ -89,7 +89,7 @@ const Header = ({ basic = false }) => {
 	if (basic) {
 		return (
 			<header className="sticky top-0 z-50 grid px-4 py-4 transition-transform duration-500 place-items-center md:px-8 md:py-6 bg-gradient-to-b from-primary/40 to-transparent backdrop-blur">
-				<Gladstone show={showLogo} />
+				<Gladstone show={true} />
 			</header>
 		);
 	} else {
@@ -207,7 +207,7 @@ const Menu = ({ open }) => {
 	return (
 		<motion.nav
 			className={`fixed top-0 left-0 z-50 flex flex-col h-screen w-full gap-3 px-20 lg:px-20 py-10 pt-20 
-      bg-nav-pattern bg-no-repeat bg-cover bg-bottom
+      bg-nav-pattern bg-[#0f0b39] lg:bg-none bg-no-repeat bg-cover bg-bottom
       border-secondary/10 rounded-lg
       lg:border-0 lg:h-auto lg:items-center lg:justify-between lg:flex-row lg:static lg:p-0 lg:bg-transparent transition
       ${!open && "-translate-x-full lg:translate-x-0"}`}

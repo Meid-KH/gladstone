@@ -71,10 +71,10 @@ const Politics = () => {
 					</p>
 				</div>
 			</div>
-			<div className="absolute left-0 top-96 -z-10">
+			<div className="max-w-[35vw] absolute left-0 top-[35vh]  lg:top-96 -z-10">
 				<img src={CubeLeft?.src} alt="Cube Left" />
 			</div>
-			<div className="absolute right-0 top-36 -z-10">
+			<div className="max-w-[35vw] absolute right-0 top-[35vh] translate-y-1/4 lg:translate-y-0 lg:top-36 -z-10">
 				<img src={CubeRight?.src} alt="Cube Right" />
 			</div>
 		</section>

@@ -236,13 +236,22 @@ const OurApproach = () => {
 							Notre <br /> approche
 						</Title>
 					</div>
-					<Image
+					{/* <Image
 						className="rounded__"
 						src={ApproachImg}
 						width={417}
 						height={373}
 						// layout="fill"
 						objectFit="cover"
+					/> */}
+					<img
+						className="rounded__"
+						src={ApproachImg.src}
+						alt="Notre approche"
+						// width={417}
+						// height={373}
+						// layout="fill"
+						// objectFit="cover"
 					/>
 				</ArticleRow>
 				<ArticleRow className="mt-12 lg:mt-28">
@@ -397,26 +406,27 @@ const Team = () => {
 		>
 			<div className="relative z-10 container-sm">
 				<div className="text-center">
-					<Title className="!mb-32 lg:mb-20">Équipe</Title>
+					<Title className="!mb-32 lg:!mb-20">Équipe</Title>
 				</div>
 				<ArticleRow>
 					<div className="text-justify">
-						<Image
+						{/* <Image
 							className="max-w-full -mx-4"
 							src={Yasmine.src}
 							width={417}
 							height={376}
 							objectFit="cover"
 							quality={100}
-						/>
-						{/* <img
+						/> */}
+						<img
 							className="max-w-full"
 							src={Yasmine.src}
+							alt="Yasmine khouri"
 							// width={417}
 							// height={376}
 							// objectFit="cover"
 							// quality={100}
-						/> */}
+						/>
 						<LinedTitle className="mt-8 text-2xl lg:mt-12">
 							<h3>Yasmine khouri</h3>
 						</LinedTitle>
@@ -447,13 +457,22 @@ const Team = () => {
 					</div>
 
 					<div className="text-justify">
-						<Image
+						{/* <Image
 							className="max-w-full"
 							src={Hanna.src}
 							width={417}
 							height={376}
 							objectFit="cover"
 							quality={100}
+						/> */}
+						<img
+							className="max-w-full"
+							src={Hanna.src}
+							alt="Hanna Ehrlich"
+							// width={417}
+							// height={376}
+							// objectFit="cover"
+							// quality={100}
 						/>
 						<LinedTitle className="mt-8 text-2xl lg:mt-12">
 							<h3>Hanna Ehrlich</h3>
