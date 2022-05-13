@@ -317,7 +317,7 @@ const OurApproach = () => {
 						</div>
 					</div>
 
-					<div className="text-justify">
+					<div className="text-justify radial-shadow lg:before:hidden before:scale-150 before:max-h-[50vh] before:translate-y-1/2">
 						<div className="mb-6 lg:mb-12">
 							<LinedTitle>
 								<h3>Recherche ciblee</h3>
