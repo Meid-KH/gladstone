@@ -169,7 +169,7 @@ const Activity = () => {
 						<p>
 							Nous recrutons{" "}
 							<strong>
-								à tous niveaux de seniorité et dans tous les
+								à tous niveaux de séniorité et dans tous les
 								domaines d'activité
 							</strong>
 							. Notre expérience avec les{" "}
@@ -188,14 +188,10 @@ const Activity = () => {
 							<h3>Candidats</h3>
 						</LinedTitle>
 						<p>
-							GLADSTONE accompagne les{" "}
-							<strong>avocats et les juristes</strong> souhaitant
-							discuter de leur{" "}
-							<strong>projet professionnel</strong>. Nous sommes
-							là pour vous permettre d'avoir une vision
-							approfondie du marché, vous conseiller et vous
-							éclairer sur les possibilités d'évolution qui
-							peuvent s'offrir à vous.
+							Nous sommes là pour vous permettre d'avoir une
+							vision claire du marché et vous conseiller sur les
+							possibilités d'évolution qui peuvent s'offrir à
+							vous.
 						</p>
 					</div>
 				</ArticleRow>
@@ -281,10 +277,11 @@ const OurApproach = () => {
 							<p>
 								<strong>
 									Nous ne privilégierons jamais un client à un
-									autre
-								</strong>
-								. Notre relation avec vous est trop précieuse et
-								nous ne l'envisageons que sur le long terme.
+									autre.
+								</strong>{" "}
+								Nous discuterons ensemble des éventuels conflit
+								d'intérêts qui nous empêcheraient de mener à
+								bien notre mission.
 							</p>
 						</div>
 						<div className="mb-6 lg:mb-12">
@@ -486,13 +483,13 @@ const Team = () => {
 							New York.
 						</p>
 						<p>
-							Elle commence ensuite sa carrière de conseil en
-							recrutement juridique chez SSQ, à Londres, puis à
-							Paris. Elle établit ensuite le bureau parisien de
-							Fox Rodney et restera à sa tête jusqu'à la création
-							de GLADSTONE. Hanna y développe une expertise en
-							mouvements de collaborateurs, d'associés et
-							d'équipes significatifs en cabinets français et
+							Elle commence sa carrière de conseil en recrutement
+							juridique chez SSQ, à Londres, puis à Paris. Elle
+							établit ensuite le bureau parisien de Fox Rodney et
+							restera à sa tête jusqu'à la création de GLADSTONE.
+							Hanna y développe une expertise en mouvements de
+							collaborateurs, d'associés et d'équipes
+							significatifs en cabinets français et
 							internationaux. Elle est intervient également sur
 							des projets cross-border de recrutements d'associés
 							dans plusieurs juridictions pour un même cabinet.

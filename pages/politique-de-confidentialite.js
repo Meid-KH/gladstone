@@ -21,10 +21,23 @@ const Politics = () => {
 					<p>
 						Bienvenue sur le site internet www.gladstone-search.com
 						(« Site »), propriété de la société GLADSTONE, société
-						par actions simplifiée à associé unique, immatriculée au
-						RCS de Paris sous le numéro 890 976 657 dont le siège
-						social est situé au 16 Cours Albert 1er 75008 Paris,
-						contact : 0183756401 et contact@gladstone-search.com («
+						par actions simplifiée, immatriculée au RCS de Paris
+						sous le numéro 890 976 657 dont le siège social est
+						situé au 16 Cours Albert 1er 75008 Paris, contact :{" "}
+						<a
+							href="tel:+33183756401"
+							className="underline-offset-2 hover:underline"
+						>
+							+331 83 75 64 01
+						</a>{" "}
+						et{" "}
+						<a
+							href="mailto:contact@gladstone-search.com"
+							className="underline-offset-2 hover:underline"
+						>
+							contact@gladstone-search.com
+						</a>{" "}
+						(«
 						<strong>GLADSTONE</strong> »).
 					</p>
 					<p>
