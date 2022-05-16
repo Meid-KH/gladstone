@@ -119,7 +119,7 @@ const Activity = () => {
 				</div>
 
 				<ArticleRow className="mt-28">
-					<div className="text-justify">
+					<div className="text-justify radial-shadow lg:before:hidden before:scale-150 before:min-h-[50vh] before:top-full before:-translate-y-full">
 						<LinedTitle>
 							<h3>Cabinets d'avocats</h3>
 						</LinedTitle>
