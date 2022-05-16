@@ -188,10 +188,13 @@ const Activity = () => {
 							<h3>Candidats</h3>
 						</LinedTitle>
 						<p>
-							Nous sommes là pour vous permettre d'avoir une
-							vision claire du marché et vous conseiller sur les
-							possibilités d'évolution qui peuvent s'offrir à
-							vous.
+							GLADSTONE accompagne les{" "}
+							<strong>avocats et les juristes</strong> souhaitant
+							discuter de leur{" "}
+							<strong>projet professionnel</strong>. Nous sommes
+							là pour vous permettre d'avoir une vision claire du
+							marché et vous conseiller sur les possibilités
+							d'évolution qui peuvent s'offrir à vous.
 						</p>
 					</div>
 				</ArticleRow>
@@ -279,9 +282,9 @@ const OurApproach = () => {
 									Nous ne privilégierons jamais un client à un
 									autre.
 								</strong>{" "}
-								Nous discuterons ensemble des éventuels conflit
-								d'intérêts qui nous empêcheraient de mener à
-								bien notre mission.
+								Nous discuterons ensemble d’éventuels conflits
+								d’intérêts qui nous empêcheraient de mener à
+								bien notre mission
 							</p>
 						</div>
 						<div className="mb-6 lg:mb-12">

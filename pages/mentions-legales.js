@@ -33,12 +33,12 @@ const Politics = () => {
 						(«GLADSTONE »)
 					</p>
 					<p>
-						L'utilisation du Gladstone ne vous confère aucun droit.
-						Ces droits restent la propriété exclusive de Gladstone.
-						Ainsi, tous les textes, images, logos, documents
-						téléchargeables et autres éléments reproduits sur le
-						site sont réservés et protégés par le droit de la
-						propriété intellectuelle. A ce titre et conformément au
+						L'utilisation du nom GLADSTONE ne vous confère aucun
+						droit. Ces droits restent la propriété exclusive de
+						GLADSTONE. Ainsi, tous les textes, images, logos,
+						documents téléchargeables et autres éléments reproduits
+						sur le site sont réservés et protégés par le droit de la
+						propriété intellectuelle. À ce titre et conformément au
 						Code de la Propriété Intellectuelle, seule l'utilisation
 						pour un usage privé est autorisée et toute autre
 						utilisation est constitutive de contrefaçon et/ou

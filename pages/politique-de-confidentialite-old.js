@@ -77,7 +77,8 @@ const Politics = () => {
 						données à caractère personnel que vous nous fournissez
 						ou qui sont collectées sur vous dans le cadre de notre
 						activité de placement ou lorsque vous contractez avec
-						nous (« Politique de confidentialité»).
+						nous (« <strong>Politique de confidentialité</strong>
+						»).
 					</p>
 					<p>
 						Nous nous engageons à respecter votre vie privée et à
@@ -85,12 +86,11 @@ const Politics = () => {
 						concernant, conformément à la réglementation en vigueur
 						(« Réglementation »), et notamment au Règlement Général
 						(UE) 2016/679 du 27 avril 2016 sur la Protection des
-						Données (« RGPD ») et la Loi « Informatique et libertés
-						» n°78-17 modifiée.
+						Données (« <strong>RGPD</strong> ») et la Loi «
+						Informatique et libertés » n°78-17 modifiée
 					</p>
-
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
-						<h2>CHAMP D'APPLICATION</h2>
+						<h2>Champ d'application </h2>
 					</LinedTitle>
 					<p>
 						Les informations que vous communiquez lors des échanges
@@ -103,10 +103,11 @@ const Politics = () => {
 					<p>
 						Ces informations sont susceptibles de constituer des
 						données à caractère personnel conformément à la
-						définition qui leur est donnée dans le RGPD (« Données
+						définition qui leur est donnée dans le RGPD («{" "}
+						<strong>Données</strong>
 						»), à savoir des informations se rapportant à une
-						personne physique identifiée ou identifiable (ci-après
-						«Personne concernée »).
+						personne physique identifiée ou identifiable (ci-après «
+						<strong>Personne concernée</strong> »).
 					</p>
 					<p>
 						En tant que prestataire de service de recrutement pour
@@ -129,30 +130,29 @@ const Politics = () => {
 					<p>
 						Les neuf points suivants vont vous permettre de
 						comprendre les modalités du traitement, par nous, de vos
-						Données :
+						Données
 					</p>
-
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
-						<h3>1- LES DONNÉES QUE NOUS COLLECTONS ET TRAITONS</h3>
+						<h3>1- Les donnees que nous collectons et traitons</h3>
 					</LinedTitle>
 					<p>
-						<strong>Candidats -</strong> Nous vous demandons de nous
+						<strong>Candidats</strong> - Nous vous demandons de nous
 						fournir certaines données personnelles afin de pouvoir
 						répondre à votre demande et/ou transmettre votre
 						candidature. Les types de Données que nous collectons et
-						traitons peuvent inclure:
+						traitons peuvent inclure :
 					</p>
 					<ul>
 						<li>
 							<strong>
-								Données d'identification et de contact:
-							</strong>{" "}
-							notamment nom et prénom, civilité, coordonnées
+								Données d'identification et de contact
+							</strong>
+							: notamment nom et prénom, civilité, coordonnées
 							(adresse postale, numéro de téléphone et adresse
-							e-mail personnels et/ou professionnels) ;
+							e-mail personnels et/ou professionnels);
 						</li>
 						<li>
-							<strong>Données de recrutement:</strong>{" "}
+							<strong>Données de recrutement</strong>:
 							informations fournies pendant le processus de
 							candidature et les éventuels prises de contact ou
 							entretiens, en particulier les informations
@@ -160,36 +160,14 @@ const Politics = () => {
 							cas échéant, les photographies ou votre date de
 							naissance, formation et expérience de travail,
 							recommandations ou références, documents attestant
-							votre droit de travailler, diplômes et formations,
+							votre droit de travailler ; diplômes et formations ;
 							le ou les type(s) de contrats de travail
-							recherché(s), attentes salariales.
+							recherché(s) ; attentes salariales ;
 						</li>
 					</ul>
 					<p>
-						<strong>Clients -</strong> Les types de Données que nous
-						collectons et traitons peuvent inclure:
-					</p>
-					<ul>
-						<li>
-							<strong>
-								Données d'identification et de contact
-								professionnel:
-							</strong>{" "}
-							notamment nom et prénom, civilité, poste actuel,
-							coordonnées (numéro de téléphone et adresse e-mail).
-						</li>
-						<li>
-							<strong>Données de recrutement:</strong>{" "}
-							informations fournies dans le cadre des services de
-							placement et les éventuels prises de contacts
-							(attentes sur le candidat, informations générales
-							sur l'équipe du Client concernée par les services de
-							placement).
-						</li>
-					</ul>
-					<p>
-						<strong>Fournisseurs -</strong> Les types de Données que
-						nous collectons et traitons peuvent inclure:
+						Clients - Les types de Données que nous collectons et
+						traitons peuvent inclure:
 					</p>
 					<ul>
 						<li>
@@ -200,6 +178,28 @@ const Politics = () => {
 							: notamment nom et prénom, civilité, poste actuel,
 							coordonnées (numéro de téléphone et adresse e-mail)
 							;
+						</li>
+						<li>
+							<strong>Données de recrutement</strong> :
+							informations fournies dans le cadre des services de
+							placement et les éventuels prises de contacts
+							(attentes sur le candidat, informations générales
+							sur l'équipe du Client concernée par les services de
+							placement).
+						</li>
+					</ul>
+					<p>
+						<strong>Fournisseurs</strong> - Les types de Données que
+						nous collectons et traitons peuvent inclure :
+					</p>
+					<ul>
+						<li>
+							<strong>
+								Données d'identification et de contact
+								professionnel
+							</strong>
+							: notamment nom et prénom, civilité, poste actuel,
+							coordonnées (numéro de téléphone et adresse e-mail);
 						</li>
 						<li>
 							<strong>
@@ -213,13 +213,12 @@ const Politics = () => {
 						Nous ne collectons pas vos données lors de votre
 						navigation sur notre site internet.
 					</p>
-
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
-						<h3>2 - FINALITÉ DU TRAITEMENT DE VOS DONNÉES</h3>
+						<h3>2 - FINALITE DU TRAITEMENT DE VOS DONNEES </h3>
 					</LinedTitle>
 					<p>
-						<strong>Candidats -</strong> Nous traitons vos Données,
-						dans la mesure où cela est nécessaire pour:
+						<strong>Candidats</strong> - Nous traitons vos Données,
+						dans la mesure où cela est nécessaire pour :
 					</p>
 					<ul>
 						<li>
@@ -227,16 +226,14 @@ const Politics = () => {
 							soit notamment vous proposer des offres d'emploi ou
 							de missions adaptées et gérer le processus de
 							candidature aux emplois et missions (contacts
-							téléphoniques, entretiens, comptes-rendus, etc.) ;
+							téléphoniques, entretiens, comptes-rendus, etc.);
 						</li>
 						<li>
 							Assurer le suivi et la gestion de nos relations
 							commerciales, tels que vous informer sur nos
 							actualités ou sur certaines opportunités
 							professionnelles, ou bien évaluer votre satisfaction
-							pour améliorer la qualité de nos services;
-						</li>
-						<li>
+							pour améliorer la qualité de nos services ; •
 							Constituer une base de données de Candidats pour
 							vous contacter lorsqu'une offre est susceptible de
 							vous intéresser.
@@ -245,7 +242,7 @@ const Politics = () => {
 					<p>
 						La collecte des Données est limitée aux informations
 						nécessaires à l'accomplissement des finalités décrites
-						ci-dessus. De tels traitements sont fondés sur:
+						ci-dessus. De tels traitements sont fondés sur :
 					</p>
 					<ul>
 						<li>
@@ -261,8 +258,8 @@ const Politics = () => {
 						</li>
 					</ul>
 					<p>
-						<strong>Clients -</strong> Nous traitons vos Données,
-						dans la mesure où cela est nécessaire pour:
+						Clients - Nous traitons vos Données, dans la mesure où
+						cela est nécessaire pour :
 					</p>
 					<ul>
 						<li>
@@ -288,6 +285,9 @@ const Politics = () => {
 							satisfaction pour améliorer la qualité de nos
 							services.
 						</li>
+					</ul>
+					<p></p>
+					<ul>
 						<li>
 							L'exécution du contrat de services de placement, qui
 							nous lie à vous le cas échéant ;
@@ -299,12 +299,12 @@ const Politics = () => {
 						<li>
 							Notre intérêt légitime, à savoir gérer notre
 							activité, améliorer l'organisation de notre travail
-							et effectuer de la prospection commerciale.
+							et effectuer de la prospection commerciale
 						</li>
 					</ul>
 					<p>
-						<strong>Fournisseur -</strong> Nous traitons vos
-						Données, dans la mesure où cela est nécessaire pour:
+						Fournisseur - Nous traitons vos Données, dans la mesure
+						où cela est nécessaire pour:
 					</p>
 					<ul>
 						<li>
@@ -318,7 +318,7 @@ const Politics = () => {
 					<p>
 						La collecte des Données est limitée aux informations
 						nécessaires à l'accomplissement des finalités décrites
-						ci-dessus. De tels traitements sont fondés sur:
+						ci-dessus. De tels traitements sont fondés sur :
 					</p>
 					<ul>
 						<li>L'exécution du contrat qui nous lie à vous ;</li>
@@ -327,10 +327,9 @@ const Politics = () => {
 							légales ou règlementaires, le cas échéant.
 						</li>
 					</ul>
-
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
 						<h3>
-							3 - VOS DONNÉES SONT-ELLES COMMUNIQUÉES À DES TIERS
+							3 - VOS DONNEES SONT-ELLES COMMUNIQUEES A DES TIERS
 							?
 						</h3>
 					</LinedTitle>
@@ -338,7 +337,7 @@ const Politics = () => {
 						Afin de réaliser les finalités décrites au point 2, nous
 						pouvons être amenés à communiquer vos Données aux
 						destinataires suivants, en conformité avec la
-						réglementation applicable:
+						réglementation applicable :
 					</p>
 					<ul>
 						<li>
@@ -366,7 +365,7 @@ const Politics = () => {
 							règlementaires.
 						</li>
 						<li>
-							<strong>Pour les Candidats :</strong> Lorsqu'une une
+							<strong>Pour les Candidats</strong> - Lorsqu'une une
 							offre vous intéresse, nous transmettons vos données
 							à nos Clients ou à d'autres recruteurs afin de
 							fournir des services de placement, notamment votre
@@ -379,11 +378,10 @@ const Politics = () => {
 							vos Données.
 						</li>
 					</ul>
-
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
 						<h3>
-							4 - PENDANT COMBIEN DE TEMPS VOS DONNÉES SONT-ELLES
-							CONSERVÉES ?
+							4 - PENDANT COMBIEN DE TEMPS VOS DONNEES SONT-ELLES
+							CONSERVEES ?
 						</h3>
 					</LinedTitle>
 					<p>
@@ -392,31 +390,29 @@ const Politics = () => {
 					</p>
 					<ul>
 						<li>
-							<strong>Pour les Candidats -</strong> Vos Données
-							seront conservées pendant une durée maximale de 2
-							ans à compter du dernier contact ;
+							Pour les Candidats - Vos Données seront conservées
+							pendant une durée maximale de 2 ans à compter du
+							dernier contact ;
 						</li>
 						<li>
-							<strong>Pour les Clients ou Fournisseurs -</strong>{" "}
-							Vos Données seront conservées pendant une durée
-							maximale de 3 ans à compter de la fin des relations
-							d'affaires.
+							Pour les Clients ou Fournisseurs - Vos Données
+							seront conservées pendant une durée maximale de 3
+							ans à compter de la fin des relations d'affaires.
 						</li>
 					</ul>
-
 					<p>
 						Certains traitements de Données spécifiques que nous
 						mettons en œuvre pourront avoir des durées de
 						conservation différentes (comptabilité par exemple). Si
 						vous souhaitez obtenir plus de détails sur les règles de
 						conservation spécifiques à un traitement déterminé, vous
-						pouvez vous adresser à l'adresse e-mail visée au point 7
-						ci-dessous.
+						pouvez vous adresser à l'adresse mail visée au point 7
+						ci-dessous.{" "}
 					</p>
 					<p>
 						Plus généralement, vos Données sont conservées pour le
 						temps nécessaire à la réalisation des finalités pour
-						lesquelles elles ont été collectées énoncées ci-dessus.
+						lesquelles elles ont été collectées énoncées ci-dessus.{" "}
 					</p>
 					<p>
 						Pour déterminer la durée de conservation appropriée de
@@ -425,30 +421,29 @@ const Politics = () => {
 						résultant de l'utilisation ou de la divulgation non
 						autorisée des Données, les finalités pour lesquelles
 						nous traitons vos Données ainsi que nos obligations
-						légales.
+						légales.{" "}
 					</p>
 					<p>
 						Au-delà, vos Données sont supprimées ou archivées
 						conformément aux prescriptions légales et
 						réglementaires.
 					</p>
-
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
 						<h3>
-							5 - QUELLES SONT LES MESURES DE SECURITÉ MISES EN
-							PLACE ?
+							5 - QUELLES SONT LES MESURES DE SECURITE MISES EN
+							PLACE ?{" "}
 						</h3>
 					</LinedTitle>
 					<p>
 						Nous mettons en œuvre les mesures de sécurité techniques
-						et organisationnelles adéquates, notamment:
+						et organisationnelles adéquates, notamment :
 					</p>
 					<ul>
 						<li>
 							<strong>Accès restreint</strong> aux dossiers
 							professionnels (numérique et papier) aux personnes
 							habilitées, dans le but d'accomplir leurs tâches
-							professionnelles;
+							professionnelles ;
 						</li>
 						<li>
 							<strong>
@@ -456,17 +451,17 @@ const Politics = () => {
 							</strong>{" "}
 							imposée aux membres du personnel habilités à traiter
 							vos Données ainsi qu'à nos Clients, sous-traitants,
-							Fournisseurs et partenaires;
+							Fournisseurs et partenaires ;
 						</li>
 						<li>
 							<strong>
-								Sécurisation des postes et outils de travail :
-							</strong>{" "}
-							verrouillage automatique des postes de travail,
+								Sécurisation des postes et outils de travail
+							</strong>
+							: verrouillage automatique des postes de travail,
 							protection par mot de passe etc. ;
 						</li>
 						<li>
-							<strong>Mesures de sécurité techniques :</strong>{" "}
+							<strong>Mesures de sécurité techniques</strong>:
 							traçabilité, des accès et des incidents, sauvegarde
 							régulière des Données, mise en place de logiciels
 							anti-virus ou firewall.
@@ -479,7 +474,7 @@ const Politics = () => {
 					</p>
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
 						<h3>
-							6 - VOS DONNÉES SONT-ELLES TRANSFÉRÉES HORS DE L'UE
+							6 - VOS DONNEES SONT-ELLES TRANSFEREES HORS DE L'UE
 							?
 						</h3>
 					</LinedTitle>
@@ -507,15 +502,15 @@ const Politics = () => {
 						établies par la Commission européenne.
 					</p>
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
-						<h3>7 - QUELS-SONT VOS DROITS ?</h3>
+						<h3>7 - QUELS SONT VOS DROITS ? </h3>
 					</LinedTitle>
 					<p>
 						En tant que Personne concernée dont les Données sont
-						traitées, vous disposez des droits suivants:
+						traitées, vous disposez des droits suivants :
 					</p>
 					<ul>
 						<li>
-							<strong>Droit d'accès :</strong> vous pouvez
+							<strong>Droit d'accès</strong> : vous pouvez
 							demander à accéder aux Données que nous détenons sur
 							vous et à certaines informations sur la manière dont
 							elles sont traitées. Dans certains cas, et sur
@@ -523,77 +518,68 @@ const Politics = () => {
 							une copie électronique de vos Données ;
 						</li>
 						<li>
-							<strong>Droit à la rectification :</strong> vous
+							<strong>Droit à la rectification</strong> : vous
 							pouvez demander à rectifier toute Donnée inexacte ou
 							incomplète vous concernant. Vous devez alors
 							démontrer en quoi de telles informations sont
 							incorrectes ;
 						</li>
 						<li>
-							<strong>
-								Droit à la limitation du traitement :
-							</strong>{" "}
-							dans certaines circonstances, une limitation du
+							<strong>Droit à la limitation du traitement</strong>{" "}
+							: dans certaines circonstances, une limitation du
 							traitement est possible. Vous pouvez faire cette
 							demande à tout moment et nous déciderons des suites
-							à lui donner;
+							à lui donner ;
 						</li>
 						<li>
-							<strong>Droit d'opposition :</strong> vous pouvez
+							<strong>Droit d'opposition</strong> : vous pouvez
 							vous opposer à tout traitement fondé sur notre
 							intérêt légitime, pour des motifs tenant à votre
-							situation particulière;
+							situation particulière ;
 						</li>
 						<li>
-							<strong>Droit à l'effacement :</strong> dans
+							<strong>Droit à l'effacement</strong> : dans
 							certaines circonstances, vous pouvez demander la
-							suppression de vos Données;
+							suppression de vos Données ;
 						</li>
 						<li>
-							<strong>Droit à la portabilité :</strong> dans
+							<strong>Droit à la portabilité</strong> : dans
 							certaines circonstances, vous pouvez demander à ce
 							que nous vous communiquions vos Données, dans un
 							format couramment utilisé et lisible par une
 							machine. Si cela est techniquement possible, vous
 							pouvez également exiger que nous communiquions vos
-							données à un autre responsable de traitement;
+							données à un autre responsable de traitement ;
 						</li>
 						<li>
-							<strong>
-								Droit de retirer votre consentement :
-							</strong>{" "}
-							dans la mesure où le traitement de vos Données est
+							<strong>Droit de retirer votre consentement</strong>
+							: dans la mesure où le traitement de vos Données est
 							fondé sur votre consentement, vous pouvez le retirer
-							à tout moment;
+							à tout moment ;
 						</li>
 						<li>
 							<strong>Droit de formuler des directives</strong>{" "}
-							relatives à la conservation, à l'effacement et à la
+							relatives à la conservation, à l‘effacement et à la
 							communication de vos Données après votre décès.
 						</li>
 					</ul>
 					<p>
 						Vous pouvez exercer ces droits en vous adressant à notre
 						responsable à la protection des données, à l'adresse
-						<a
-							href="mailto:contact@gladstone-search.com"
-							className="underline-offset-2 hover:underline"
-						>
-							contact@gladstone-search.com
-						</a>{" "}
-						ou en nous adressant une lettre à l'adresse suivante :
-						16 cours Albert 1er, 75008 Paris.
+						contact@gladstone-search.com ou en nous adressant une
+						lettre à l'adresse suivante : 16 cours Albert 1er, 75008
+						Paris.
 					</p>
 					<p>
 						Vous avez également la possibilité de déposer une
 						réclamation concernant le traitement de vos données
 						personnelles auprès de l'autorité compétente de
 						protection des données : la Commission nationale de
-						l'informatique et des libertés (CNIL).
+						l'informatique et des libertés (CNIL).{" "}
 					</p>
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
 						<h3>
-							8- LOYAUTÉ DES INFORMATIONS FOURNIES PAR LES
+							8- LOYAUTE DES INFORMATIONS FOURNIES PAR LES
 							CANDIDATS
 						</h3>
 					</LinedTitle>
@@ -613,7 +599,7 @@ const Politics = () => {
 						notre égard ainsi qu'à celui de nos Clients.
 					</p>
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
-						<h3>9 - MISE À JOUR DE LA POLITIQUE</h3>
+						<h3>9 - MISE A JOUR DE LA POLITIQUE </h3>
 					</LinedTitle>
 					<p>
 						Nous nous réservons le droit de modifier unilatéralement
@@ -621,13 +607,6 @@ const Politics = () => {
 						engagez à la consulter régulièrement pour vous tenir
 						informé des éventuelles modifications.
 					</p>
-
-					{/*  */}
-					{/* <LinedTitle className="mt-12 text-2xl lg:mt-16">
-						<h2>CHAMP D'APPLICATION</h2>
-					</LinedTitle> */}
-
-					{/*  */}
 				</div>
 			</div>
 			<div className="max-w-[35vw] absolute left-0 top-[35vh]  lg:top-96 -z-10">
