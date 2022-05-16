@@ -95,7 +95,7 @@ const Activity = () => {
 	return (
 		<motion.section
 			id="activity"
-			className="relative py-16 lg:py-20 radial-shadow before:top-1/2 before:-translate-y-1/2 before:scale-150 lg:before:hidden"
+			className="relative py-16 lg:py-20 radial-shadow before:top-0 lg:before:top-1/2 lg:before:-translate-y-1/2 before:scale-150 lg:before:hidden"
 			ref={ref}
 			animate={controls}
 			initial="hidden"
@@ -200,10 +200,10 @@ const Activity = () => {
 				</ArticleRow>
 			</div>
 
-			<div className="lg:hidden max-w-[35vw] absolute left-0 top-1/2 -z-10 translate-y-28">
+			<div className="lg:hidden max-w-[35vw] absolute left-0 top-12 lg:top-1/2 -z-10 translate-y-full lg:translate-y-28">
 				<img src={CubeLeft?.src} alt="Cube Left" />
 			</div>
-			<div className="lg:hidden max-w-[35vw] absolute right-0 top-1/2 -z-10 translate-y-44">
+			<div className="lg:hidden max-w-[35vw] absolute right-0 top-48 lg:top-1/2 -z-10 translate-y-full lg:translate-y-44">
 				<img src={CubeRight?.src} alt="Cube Right" />
 			</div>
 		</motion.section>
@@ -273,7 +273,7 @@ const OurApproach = () => {
 								de notre part.
 							</p>
 						</div>
-						<div className="mb-6 lg:mb-12">
+						<div className="mb-6 lg:mb-12 radial-shadow lg:before:hidden before:min-h-[50vh] before:scale-150 before:max-h-[50vh] before:-translate-y-1/2">
 							<LinedTitle>
 								<h3>Transparence</h3>
 							</LinedTitle>
@@ -282,8 +282,8 @@ const OurApproach = () => {
 									Nous ne privilégierons jamais un client à un
 									autre.
 								</strong>{" "}
-								Nous discuterons ensemble d’éventuels conflits
-								d’intérêts qui nous empêcheraient de mener à
+								Nous discuterons ensemble d'éventuels conflits
+								d'intérêts qui nous empêcheraient de mener à
 								bien notre mission
 							</p>
 						</div>
@@ -320,7 +320,7 @@ const OurApproach = () => {
 						</div>
 					</div>
 
-					<div className="text-justify radial-shadow lg:before:hidden before:scale-150 before:max-h-[50vh] before:translate-y-1/2">
+					<div className="text-justify radial-shadow lg:before:hidden before:scale-150 before:max-h-[50vh] before:-translate-y-1/2">
 						<div className="mb-6 lg:mb-12">
 							<LinedTitle>
 								<h3>Recherche ciblee</h3>
@@ -409,7 +409,7 @@ const Team = () => {
 					<Title className="!mb-32 lg:!mb-20">Équipe</Title>
 				</div>
 				<ArticleRow>
-					<div className="text-justify">
+					<div className="text-justify radial-shadow lg:before:hidden before:scale-150 before:max-h-[50vh] before:translate-y-full">
 						{/* <Image
 							className="max-w-full -mx-4"
 							src={Yasmine.src}
@@ -456,7 +456,7 @@ const Team = () => {
 						</p>
 					</div>
 
-					<div className="text-justify">
+					<div className="text-justify radial-shadow lg:before:hidden before:scale-150 before:max-h-[50vh] before:translate-y-1/4">
 						{/* <Image
 							className="max-w-full"
 							src={Hanna.src}
@@ -587,7 +587,7 @@ const Contact = () => {
 							</div>
 						</div>
 
-						<div className="text-center">
+						<div className="text-center radial-shadow lg:before:hidden before:scale-[2] before:max-h-[50vh] before:opacity-40 before:translate-y-1/4__">
 							<LinedTitle className="text-center before:-translate-x-1/2 before:!left-1/2">
 								Hanna ehrlich
 							</LinedTitle>

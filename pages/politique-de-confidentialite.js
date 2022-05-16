@@ -14,8 +14,8 @@ const Politics = () => {
 				<div className="content">
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
 						<h2>
-							Qui sommes-nous et comment traitons-nous vos donnees
-							a caractere personnel ?
+							Qui sommes-nous et comment traitons-nous vos données
+							a caractère personnel ?
 						</h2>
 					</LinedTitle>
 					<p>
