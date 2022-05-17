@@ -170,19 +170,18 @@ const Activity = () => {
 							Nous recrutons{" "}
 							<strong>
 								à tous niveaux de séniorité et dans tous les
-								domaines d'activité
-							</strong>
-							. Notre expérience avec les{" "}
-							<strong>directions juridiques d'entreprises</strong>{" "}
-							nous a mené à développer une connaissance
-							approfondie des secteurs de la Santé, de l'IT, du
-							Luxe, et de l'Art. Nous avons également assisté à
-							plusieurs reprises des{" "}
+								domaines d'activité.
+							</strong>{" "}
+							Notre expérience avec les directions{" "}
+							<strong>juridiques d'entreprises </strong> nous a
+							mené à développer une connaissance spécifique des
+							secteurs de la Santé, de l'IT, du Luxe, et de l'Art.
+							Nous avons également assisté à plusieurs reprises
+							des{" "}
 							<strong>
-								banques et fonds d'investissement tant en France
-								qu'à l'international
+								banques et fonds d'investissement à Paris et à
+								Londres.
 							</strong>
-							.
 						</p>
 						<LinedTitle>
 							<h3>Candidats</h3>
@@ -284,7 +283,7 @@ const OurApproach = () => {
 								</strong>{" "}
 								Nous discuterons ensemble d'éventuels conflits
 								d'intérêts qui nous empêcheraient de mener à
-								bien notre mission
+								bien notre mission.
 							</p>
 						</div>
 						<div className="mb-6 lg:mb-12">

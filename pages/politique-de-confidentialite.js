@@ -20,15 +20,16 @@ const Politics = () => {
 					</LinedTitle>
 					<p>
 						Bienvenue sur le site internet www.gladstone-search.com
-						(« Site »), propriété de la société GLADSTONE, société
-						par actions simplifiée, immatriculée au RCS de Paris
-						sous le numéro 890 976 657 dont le siège social est
-						situé au 16 Cours Albert 1er 75008 Paris, contact :{" "}
+						(« <strong> Site </strong>»), propriété de la société
+						GLADSTONE, société par actions simplifiée, immatriculée
+						au RCS de Paris sous le numéro 890 976 657 dont le siège
+						social est situé au 16 Cours Albert 1er 75008 Paris,
+						contact :{" "}
 						<a
 							href="tel:+33183756401"
 							className="underline-offset-2 hover:underline"
 						>
-							+331 83 75 64 01
+							+33 1 83 75 64 01
 						</a>{" "}
 						et{" "}
 						<a
@@ -37,8 +38,7 @@ const Politics = () => {
 						>
 							contact@gladstone-search.com
 						</a>{" "}
-						(«
-						<strong>GLADSTONE</strong> »).
+						(« <strong> GLADSTONE </strong>»).
 					</p>
 					<p>
 						GLADSTONE est une société fournissant des services de
@@ -47,28 +47,31 @@ const Politics = () => {
 						demandes d'emploi.
 					</p>
 					<p>
-						Afin de simplifier la lecture de ce document, « nous »
-						ou « notre » seront employés pour désigner GLADSTONE. De
-						la même manière, « vous » ou « votre » seront employés
-						pour vous désigner individuellement selon le contexte,
-						en tant que :
+						Afin de simplifier la lecture de ce document, «{" "}
+						<strong> nous </strong>» ou « <strong> notre </strong>»
+						seront employés pour désigner GLADSTONE. De la même
+						manière, « <strong> vous </strong>» ou «{" "}
+						<strong> votre </strong>» seront employés pour vous
+						désigner individuellement selon le contexte, en tant que
+						:
 					</p>
 					<ul>
 						<li>
 							Personne en contact avec nos consultants en vue d'un
-							recrutement (« Candidat ») ;
+							recrutement (« <strong> CANDIDAT </strong>») ;
 						</li>
 						<li>
 							Prospects ou clients personnes physiques ou contacts
 							professionnels des cabinets d'avocat ou entreprises
-							souhaitant bénéficier d'un service de placement («
-							Client ») ; ou,
+							souhaitant bénéficier d'un service de placement («{" "}
+							<strong>CLIENT </strong>») ; ou,
 						</li>
 						<li>
 							Fournisseur personne physique ou contacts
-							professionnels chez nos fournisseurs (« Fournisseur
-							»). Ensemble, vous et nous sommes les parties («
-							Parties »).
+							professionnels chez nos fournisseurs («{" "}
+							<strong> FOURNISSEUR</strong>»). Ensemble, vous et
+							nous sommes les parties (« <strong>Parties </strong>
+							»).
 						</li>
 					</ul>
 					<p>
@@ -77,16 +80,18 @@ const Politics = () => {
 						données à caractère personnel que vous nous fournissez
 						ou qui sont collectées sur vous dans le cadre de notre
 						activité de placement ou lorsque vous contractez avec
-						nous (« Politique de confidentialité»).
+						nous (« <strong> Politique de confidentialité</strong>
+						»).
 					</p>
 					<p>
 						Nous nous engageons à respecter votre vie privée et à
 						protéger les données à caractère personnel vous
 						concernant, conformément à la réglementation en vigueur
-						(« Réglementation »), et notamment au Règlement Général
-						(UE) 2016/679 du 27 avril 2016 sur la Protection des
-						Données (« RGPD ») et la Loi « Informatique et libertés
-						» n°78-17 modifiée.
+						(« <strong> Réglementation </strong>»), et notamment au
+						Règlement Général (UE) 2016/679 du 27 avril 2016 sur la
+						Protection des Données (« <strong> RGPD </strong>») et
+						la Loi « <strong> Informatique et libertés</strong>»
+						n°78-17 modifiée.
 					</p>
 
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
@@ -103,10 +108,11 @@ const Politics = () => {
 					<p>
 						Ces informations sont susceptibles de constituer des
 						données à caractère personnel conformément à la
-						définition qui leur est donnée dans le RGPD (« Données
-						»), à savoir des informations se rapportant à une
-						personne physique identifiée ou identifiable (ci-après
-						«Personne concernée »).
+						définition qui leur est donnée dans le RGPD («{" "}
+						<strong> Données</strong>»), à savoir des informations
+						se rapportant à une personne physique identifiée ou
+						identifiable (ci-après «{" "}
+						<strong>Personne concernée </strong>»).
 					</p>
 					<p>
 						En tant que prestataire de service de recrutement pour
@@ -162,7 +168,7 @@ const Politics = () => {
 							recommandations ou références, documents attestant
 							votre droit de travailler, diplômes et formations,
 							le ou les type(s) de contrats de travail
-							recherché(s), attentes salariales.
+							recherché(s), attentes de rémunération.
 						</li>
 					</ul>
 					<p>
