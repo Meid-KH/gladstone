@@ -64,6 +64,7 @@ const Politics = () => {
 								href="https://www.ovh.com/"
 								className="underline-offset-2 hover:underline"
 								target="_blank"
+								rel="noreferrer"
 							>
 								https://www.ovh.com/
 							</a>{" "}
