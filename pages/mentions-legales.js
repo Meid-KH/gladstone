@@ -79,8 +79,22 @@ const Politics = () => {
 					</LinedTitle>
 					<p>
 						BACKUP, dont le siège social est situé : 25, rue du clos
-						75020. Immatriculée au RCS de Paris sous le numéro :
-						899414767 00017 Site internet : collectif-backup.fr
+						75020.
+					</p>
+					<p>
+						Immatriculée au RCS de Paris sous le numéro : 899414767
+						00017
+					</p>
+					<p>
+						Site internet :{" "}
+						<a
+							href="https://collectif-backup.fr/"
+							className="underline-offset-2 hover:underline"
+							target="_blank"
+							rel="noreferrer"
+						>
+							collectif-backup.fr
+						</a>
 					</p>
 
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
