@@ -23,8 +23,8 @@ const Politics = () => {
 						(« <strong> Site </strong>»), propriété de la société
 						GLADSTONE, société par actions simplifiée, immatriculée
 						au RCS de Paris sous le numéro 890 976 657 dont le siège
-						social est situé au 16 Cours Albert 1er 75008 Paris,
-						contact :{" "}
+						social est situé au 16 Cours Albert 1<sup>er</sup> 75008
+						Paris, contact :{" "}
 						<a
 							href="tel:+33183756401"
 							className="underline-offset-2 hover:underline"
@@ -58,19 +58,19 @@ const Politics = () => {
 					<ul>
 						<li>
 							Personne en contact avec nos consultants en vue d'un
-							recrutement (« <strong> CANDIDAT </strong>») ;
+							recrutement («<strong> Candidat </strong>») ;
 						</li>
 						<li>
 							Prospects ou clients personnes physiques ou contacts
 							professionnels des cabinets d'avocat ou entreprises
 							souhaitant bénéficier d'un service de placement («{" "}
-							<strong>CLIENT </strong>») ; ou,
+							<strong> Client </strong>») ; ou,
 						</li>
 						<li>
 							Fournisseur personne physique ou contacts
 							professionnels chez nos fournisseurs («{" "}
-							<strong> FOURNISSEUR</strong>»). Ensemble, vous et
-							nous sommes les parties (« <strong>Parties </strong>
+							<strong> Fournisseur</strong> »). Ensemble, vous et
+							nous sommes les parties (« <strong>Parties </strong>{" "}
 							»).
 						</li>
 					</ul>
@@ -80,7 +80,7 @@ const Politics = () => {
 						données à caractère personnel que vous nous fournissez
 						ou qui sont collectées sur vous dans le cadre de notre
 						activité de placement ou lorsque vous contractez avec
-						nous (« <strong> Politique de confidentialité</strong>
+						nous («<strong> Politique de confidentialité </strong>
 						»).
 					</p>
 					<p>
@@ -89,8 +89,8 @@ const Politics = () => {
 						concernant, conformément à la réglementation en vigueur
 						(« <strong> Réglementation </strong>»), et notamment au
 						Règlement Général (UE) 2016/679 du 27 avril 2016 sur la
-						Protection des Données (« <strong> RGPD </strong>») et
-						la Loi « <strong> Informatique et libertés</strong>»
+						Protection des Données (« <strong> RGPD </strong>») et
+						la Loi « <strong>Informatique et libertés</strong> »
 						n°78-17 modifiée.
 					</p>
 
@@ -109,7 +109,7 @@ const Politics = () => {
 						Ces informations sont susceptibles de constituer des
 						données à caractère personnel conformément à la
 						définition qui leur est donnée dans le RGPD («{" "}
-						<strong> Données</strong>»), à savoir des informations
+						<strong> Données </strong>»), à savoir des informations
 						se rapportant à une personne physique identifiée ou
 						identifiable (ci-après «{" "}
 						<strong>Personne concernée </strong>»).
@@ -588,7 +588,7 @@ const Politics = () => {
 							contact@gladstone-search.com
 						</a>{" "}
 						ou en nous adressant une lettre à l'adresse suivante :
-						16 cours Albert 1er, 75008 Paris.
+						16 cours Albert 1<sup>er</sup>, 75008 Paris.
 					</p>
 					<p>
 						Vous avez également la possibilité de déposer une
