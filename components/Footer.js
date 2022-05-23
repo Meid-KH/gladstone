@@ -28,7 +28,9 @@ const Footer = () => {
 								<span className="uppercase tracking-[0.35em]">
 									Gladstone
 								</span>
-								<span>16 Cours Albert 1er 75008 Paris</span>
+								<span>
+									16 Cours Albert 1<sup>er</sup> 75008 Paris
+								</span>
 								<Link href="/politique-de-confidentialite">
 									<a className="underline-offset-2 hover:underline">
 										Politique de confidentialité{" "}

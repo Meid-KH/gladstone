@@ -17,7 +17,7 @@ const Politics = () => {
 						<strong>GLADSTONE</strong>, société par actions
 						simplifiée, immatriculée au RCS de Paris sous le numéro
 						890 976 657 dont le siège social est situé au 16 Cours
-						Albert 1er 75008 Paris, contact :{" "}
+						Albert 1<sup>er</sup> 75008 Paris, contact :{" "}
 						<a
 							href="tel:+33183756401"
 							className="underline-offset-2 hover:underline"
