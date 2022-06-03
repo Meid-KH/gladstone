@@ -541,7 +541,7 @@ const Contact = () => {
 			variants={sectionVariants}
 		>
 			<div className="container-sm">
-				<Button className="mx-auto" test="ok" onClick={Scroll}>
+				<Button className="mx-auto" onClick={Scroll}>
 					Nous contacter
 				</Button>
 				<div ref={ContactSection} className="pt-32">

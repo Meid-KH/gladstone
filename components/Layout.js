@@ -3,7 +3,9 @@ import { useRouter } from "next/router";
 
 import Header from "./Header";
 import Footer from "./Footer";
+import Button from "../components/ui/Button";
 import { MenuContext, MenuContextProvider } from "../context/MenuContext";
+import Link from "next/link";
 
 export const MainContext = React.createContext({
 	menuOpen: null,
@@ -30,6 +32,43 @@ const Layout = ({ children }) => {
 				</div>
 				<Footer />
 				<ScrollTop />
+				<div className="fixed bottom-0 left-0 z-50 w-full border-t py-7 rounded-tl-xl__ rounded-tr-xl__ bg-primary border-secondary/20">
+					<div className="container-sm">
+						<div className="mb-3 text-xl font-medium tracking-wider uppercase">
+							Avis
+						</div>
+						<p className="tracking-wide text-justify">
+							Nous ainsi que des tiers sélectionnés utilisons des
+							cookies ou des technologies similaires à des fins
+							techniques et, avec votre consentement, à d'autres
+							fins (« les interactions et les fonctionnalités de
+							base », « l'amélioration de l'expérience », « la
+							mesure » et « le ciblage et la publicité »), comme
+							décrit dans{" "}
+							<Link href="/politique-de-confidentialite">
+								<a className="underline underline-offset-4 hover:decoration-dashed visited:text-yellow-100__">
+									la politique relative aux cookies
+								</a>
+							</Link>
+							.
+							<br /> Vous pouvez librement donner, refuser ou
+							retirer votre consentement à tout moment.
+						</p>
+						<div className="flex flex-wrap justify-between gap-6 mt-4">
+							<Button className="text-sm !py-3 !px-8 !tracking-wider">
+								En savoir plus et personnaliser
+							</Button>
+							<div className="flex gap-4">
+								<Button className="text-sm !py-3 !px-8 !tracking-wider">
+									Accepter
+								</Button>
+								<Button className="text-sm !py-3 !px-8 !tracking-wider">
+									Refuser
+								</Button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</MenuContextProvider>
 		</div>
 	);
