@@ -547,6 +547,7 @@ const Politics = () => {
 						<a
 							href="https://www.cnil.fr/fr"
 							target="_blank"
+							rel="noreferrer"
 							className="underline-offset-2 hover:underline"
 						>
 							Commission nationale de l'informatique et des
