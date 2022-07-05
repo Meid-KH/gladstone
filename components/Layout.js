@@ -28,8 +28,8 @@ const Layout = ({ children }) => {
 	const [cookiePreferences, setCookiePreferences] = React.useState(false);
 
 	React.useEffect(() => {
-		const cookieClosed = localStorage.getItem("cookie-closed");
-		cookieClosed ? setCookies(false) : setCookies(true);
+		// const cookieClosed = localStorage.getItem("cookie-closed");
+		// cookieClosed ? setCookies(false) : setCookies(true);
 	}, []);
 
 	const HideCookieBanner = () => {
