@@ -6,7 +6,7 @@
 
 @layer base {
 	html {
-		@apply scroll-smooth;
+		@apply scroll-smooth selection:bg-secondary selection:text-primary;
 	}
 	body {
 		@apply font-main bg-primary text-secondary overscroll-x-none;
@@ -48,6 +48,9 @@
 	}
 	.content li {
 		@apply relative pl-9 before:content-[''] before:absolute before:left-0 before:top-3.5 before:h-[1px] before:w-6 before:bg-current;
+	}
+	.content a {
+		@apply underline-offset-2 font-medium hover:underline;
 	}
 }
 

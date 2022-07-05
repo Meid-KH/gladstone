@@ -580,7 +580,7 @@ const Politics = () => {
 					</ul>
 					<p>
 						Vous pouvez exercer ces droits en vous adressant à notre
-						responsable à la protection des données, à l'adresse
+						responsable à la protection des données, à l'adresse{" "}
 						<a
 							href="mailto:contact@gladstone-search.com"
 							className="underline-offset-2 hover:underline"
@@ -594,8 +594,16 @@ const Politics = () => {
 						Vous avez également la possibilité de déposer une
 						réclamation concernant le traitement de vos données
 						personnelles auprès de l'autorité compétente de
-						protection des données : la Commission nationale de
-						l'informatique et des libertés (CNIL).
+						protection des données : la{" "}
+						<a
+							href="https://www.cnil.fr/fr"
+							target="_blank"
+							className="underline-offset-2 hover:underline"
+						>
+							Commission nationale de l'informatique et des
+							libertés
+						</a>{" "}
+						(CNIL).
 					</p>
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
 						<h3>

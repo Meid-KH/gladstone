@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -15,18 +16,22 @@ const MENU_ITEMS = [
 	{
 		url: "#activity",
 		label: "Activité",
+		labelEn: "Activity",
 	},
 	{
 		url: "#our-approach",
 		label: "Notre approche",
+		labelEn: "Our Approach",
 	},
 	{
 		url: "#team",
 		label: "Équipe",
+		labelEn: "Team",
 	},
 	{
 		url: "#contact",
 		label: "Contact",
+		labelEn: "Contact",
 	},
 ];
 
@@ -172,8 +177,13 @@ const MenuHamburger = ({ stick }) => {
 	);
 };
 
-const MenuItem = ({ link, label, className = "", ...rest }) => {
-	const { setOpenMenu } = React.useContext(MenuContext);
+const MenuItem = ({
+	link,
+	label,
+	className = "",
+	navigate = false,
+	...rest
+}) => {
 	const NavigateToContent = async (e) => {
 		let elem = document.querySelector(e.target.hash);
 		e.preventDefault();
@@ -184,6 +194,7 @@ const MenuItem = ({ link, label, className = "", ...rest }) => {
 		});
 		setOpenMenu();
 	};
+	const { setOpenMenu } = React.useContext(MenuContext);
 
 	return (
 		<Link href={link}>
@@ -192,7 +203,7 @@ const MenuItem = ({ link, label, className = "", ...rest }) => {
         before:content-[''] before:h-[1px] before:w-full before:bg-current before:absolute before:bottom-0 before:duration-200 before:left-0 before:scale-x-0 before:origin-right before:transition-transform
         hover:before:scale-100 hover:before:origin-left
         ${className} ${Router.pathname == "/" && "font-medium"}`}
-				onClick={NavigateToContent}
+				onClick={navigate ? NavigateToContent : false}
 				{...rest}
 			>
 				{label}
@@ -203,6 +214,7 @@ const MenuItem = ({ link, label, className = "", ...rest }) => {
 
 const Menu = ({ open }) => {
 	const { setOpenMenu } = React.useContext(MenuContext);
+	const router = useRouter();
 
 	return (
 		<motion.nav
@@ -224,7 +236,15 @@ const Menu = ({ open }) => {
 			</button>
 			{MENU_ITEMS?.map((item, index) => (
 				<motion.div key={index} variants={AnimChild}>
-					<MenuItem link={item?.url} label={item?.label} />
+					<MenuItem
+						link={item?.url}
+						label={
+							router.pathname == "/en"
+								? item?.labelEn
+								: item?.label
+						}
+						navigate
+					/>
 				</motion.div>
 			))}
 			<div className="flex items-center divide-x__ divide-gray-400__">
@@ -232,15 +252,23 @@ const Menu = ({ open }) => {
 					<MenuItem
 						link={"/"}
 						label={"FR"}
-						className="mr-2 font-semibold"
+						className={`mr-2 ${
+							router.pathname == "/"
+								? "font-semibold"
+								: "!tracking-widest"
+						} `}
 					/>
 				</motion.div>
 				<span className="text-xl lg:text-base">l</span>
 				<motion.div variants={AnimChild}>
 					<MenuItem
-						link={"#en"}
+						link={"/en"}
 						label={"EN"}
-						className="ml-2 !tracking-widest"
+						className={`ml-2 ${
+							router.pathname == "/en"
+								? "font-semibold"
+								: "!tracking-widest"
+						} `}
 					/>
 				</motion.div>
 			</div>

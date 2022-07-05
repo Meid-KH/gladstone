@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import Icon from "./ui/Icon";
 
 const Footer = () => {
+	const router = useRouter();
 	return (
 		<footer className="pt-16__ xl:pt-40__">
 			<div className="container">
@@ -31,14 +33,30 @@ const Footer = () => {
 								<span>
 									16 Cours Albert 1<sup>er</sup> 75008 Paris
 								</span>
-								<Link href="/politique-de-confidentialite">
+								<Link
+									href={
+										router.pathname.startsWith("/en")
+											? "/en/privacy-policy"
+											: "/politique-de-confidentialite"
+									}
+								>
 									<a className="underline-offset-2 hover:underline">
-										Politique de confidentialité{" "}
+										{router.pathname.startsWith("/en")
+											? "Privacy policy"
+											: "Politique de confidentialité"}
 									</a>
 								</Link>
-								<Link href="/mentions-legales">
+								<Link
+									href={
+										router.pathname.startsWith("/en")
+											? "/en/legal-notice"
+											: "/mentions-legales"
+									}
+								>
 									<a className="underline-offset-2 hover:underline">
-										Mentions légales
+										{router.pathname.startsWith("/en")
+											? "Legal notice"
+											: "Mentions légales"}
 									</a>
 								</Link>
 							</div>
@@ -51,8 +69,9 @@ const Footer = () => {
 								<Icon name="linkedin" />
 							</a>
 							<p className="pb-3 mt-6 text-xs font-normal tracking-widest uppercase">
-								Copyright © 2022 Gladstone tous droits réservés
-								| Design{" "}
+								{router.pathname.startsWith("/en")
+									? "Copyright © 2022 Gladstone all rights reserved | design"
+									: "Copyright © 2022 Gladstone tous droits réservés | Design"}{" "}
 								<a
 									className="underline"
 									target="_blank"

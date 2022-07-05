@@ -40,7 +40,13 @@ const Layout = ({ children }) => {
 	return (
 		<div className="overflow-x-hidden__">
 			<MenuContextProvider>
-				<Header basic={router.pathname == "/" ? false : true} />
+				<Header
+					basic={
+						router.pathname == "/" || router.pathname == "/en"
+							? false
+							: true
+					}
+				/>
 				<div className="min-h-[85vh] overflow-hidden pb-6 lg:pb-24">
 					{children}
 				</div>
