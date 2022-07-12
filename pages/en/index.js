@@ -133,7 +133,7 @@ const Activity = () => {
 						</p>
 						<p>
 							Our clients are{" "}
-							<strong>international and French law firms</strong>
+							<strong>international and French law firms</strong>{" "}
 							and we work with Managing Partners, Global Heads of
 							Practice, Executive Committees, Heads of Lateral
 							Recruitment and Human Resources Directors.

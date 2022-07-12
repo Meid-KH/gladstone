@@ -16,11 +16,11 @@ const MENU_ITEMS = [
 	{
 		url: "#activity",
 		label: "Activité",
-		labelEn: "Activity",
+		labelEn: "What We Do",
 	},
 	{
 		url: "#our-approach",
-		label: "Notre approche",
+		label: "Notre Approche",
 		labelEn: "Our Approach",
 	},
 	{

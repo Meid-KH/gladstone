@@ -23,8 +23,8 @@ const Politics = () => {
 						simplified joint stock company with a single
 						shareholder, registered with the Paris Trade and
 						Companies Register under number 890 976 657, whose
-						registered office is located at 16 Cours Albert 1er
-						75008 Paris, contact:{" "}
+						registered office is located at 16 Cours Albert 1
+						<sup>er</sup> 75008 Paris, contact:{" "}
 						<a
 							href="tel:+33183756401"
 							className="underline-offset-2 hover:underline"
@@ -66,7 +66,7 @@ const Politics = () => {
 							<strong>Client</strong>"); or,
 						</li>
 						<li>
-							Supplier - a natural person or our supplier’s
+							Supplier - a natural person or our supplier's
 							professional contact ("
 							<strong>Supplier</strong>"). Together, we referred
 							as the parties ("
@@ -109,7 +109,7 @@ const Politics = () => {
 						&quot;).
 					</p>
 					<p>
-						As recruitment service provider on third parties’
+						As recruitment service provider on third parties'
 						behalf, we determine why and how your Data are processed
 						to provide our services or for our commercial or
 						administrative management. We are therefore a data
@@ -232,7 +232,7 @@ const Politics = () => {
 							improve our services;
 						</li>
 						<li>
-							<strong>Build up a Candidates’ databases</strong> to
+							<strong>Build up a Candidates' databases</strong> to
 							contact you when an offer may attract you.
 						</li>
 					</ul>
@@ -244,7 +244,7 @@ const Politics = () => {
 					<ul>
 						<li>
 							<strong>Our legitimate interest</strong> in managing
-							our employment services, improving our work’s
+							our employment services, improving our work's
 							organization and conducting our business
 							development;
 						</li>
@@ -361,7 +361,7 @@ const Politics = () => {
 							<strong>For Applicants</strong> - If you are
 							interested in a position, we provide your data to
 							our Clients or other recruiters in order to provide
-							service’s placement, that’s includes your resume and
+							service's placement, that's includes your resume and
 							other information to enable the Client or recruiter
 							to assess your application. Our relationship with
 							our Clients is governed by a placement agreement
