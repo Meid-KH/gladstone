@@ -127,20 +127,24 @@ const Header = ({ basic = false }) => {
 	}
 };
 
-const Gladstone = ({ show }) => (
-	<Link href={"/"}>
-		<motion.a
-			className={`cursor-pointer flex-shrink-0 block w-[151px] ${
-				!show && "hidden"
-			}`}
-			initial={{ y: -10, scale: 0.95, opacity: 0 }}
-			animate={{ y: 0, scale: 1, opacity: 1 }}
-			transition={{ duration: 0.45 }}
-		>
-			<Logo />
-		</motion.a>
-	</Link>
-);
+const Gladstone = ({ show }) => {
+	const router = useRouter();
+
+	return (
+		<Link href={router.pathname.startsWith("/en") ? "/en" : "/"}>
+			<motion.a
+				className={`cursor-pointer flex-shrink-0 block w-[151px] ${
+					!show && "hidden"
+				}`}
+				initial={{ y: -10, scale: 0.95, opacity: 0 }}
+				animate={{ y: 0, scale: 1, opacity: 1 }}
+				transition={{ duration: 0.45 }}
+			>
+				<Logo />
+			</motion.a>
+		</Link>
+	);
+};
 
 const MenuHamburger = ({ stick }) => {
 	const { setOpenMenu } = React.useContext(MenuContext);

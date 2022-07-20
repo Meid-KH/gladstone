@@ -6,7 +6,7 @@ import CubeRight from "../../assets/img/cube-right.png";
 const Politics = () => {
 	return (
 		<section className="relative py-16 radial-shadow before:!top-[35vh] before:!h-[100vh] lg:py-20">
-			<div className="absolute radial-shadow w-full bottom-[100vh]"></div>
+			<div className="absolute radial-shadow w-full h-[60vh] scale-110 bottom-[100vh]"></div>
 
 			<div className="container">
 				<h1 className="mb-20 text-4xl font-light tracking-widest text-center uppercase">
