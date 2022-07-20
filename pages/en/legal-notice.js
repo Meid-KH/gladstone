@@ -23,8 +23,8 @@ const Politics = () => {
 							className="underline-offset-2 hover:underline"
 						>
 							+33 1 83 75 64 01
-						</a>{" "}
-						and{" "}
+						</a>
+						&nbsp;and{" "}
 						<a
 							href="mailto:contact@gladstone-search.com"
 							className="underline-offset-2 hover:underline"
