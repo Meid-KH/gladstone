@@ -394,7 +394,7 @@ const Team = () => {
 		>
 			<div className="relative z-10 container-sm">
 				<div className="text-center">
-					<Title className="!mb-32 lg:!mb-20">Our Team</Title>
+					<Title className="!mb-32 lg:!mb-20">Team</Title>
 				</div>
 				<ArticleRow>
 					<div className="text-justify radial-shadow lg:before:hidden before:scale-150 before:max-h-[50vh] before:translate-y-full">
