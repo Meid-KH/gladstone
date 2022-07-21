@@ -61,7 +61,7 @@ const Footer = () => {
 								</Link>
 							</div>
 							<a
-								className="block w-max mx-auto mt-8 transition-transform hover:-translate-y-0.5"
+								className="hidden lg:block w-max mx-auto mt-8 transition-transform hover:-translate-y-0.5"
 								href="https://www.linkedin.com/company/gladstone-search/"
 								target="_blank"
 								rel="noreferrer"

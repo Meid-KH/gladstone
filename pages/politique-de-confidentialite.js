@@ -5,17 +5,45 @@ import CubeRight from "../assets/img/cube-right.png";
 
 const Politics = () => {
 	return (
-		<section className="relative py-16 radial-shadow before:!top-[10vh] before:!h-[100vh] lg:py-20">
-			<div className="absolute radial-shadow w-full h-[60vh] scale-110 top-[140vh]"></div>
-			<div className="absolute radial-shadow w-full h-[60vh] scale-110 top-[250vh]"></div>
-			<div className="absolute radial-shadow w-full h-[60vh] scale-110 top-[380vh]"></div>
+		<section className="relative py-16 radial-shadow before:!top-[8vh] lg:before:!top-[30vh] before:!h-[100vh] lg:py-20">
+			<div className="absolute radial-shadow w-full h-[60vh] scale-110 top-[30%] lg:top-[30%]"></div>
+			<div className="absolute radial-shadow w-full h-[60vh] scale-110 top-[70%] lg:top-[60%]"></div>
+			<div className="absolute radial-shadow w-full h-[60vh] scale-110__ top-[90%] lg:top-[80%]"></div>
+
+			<div className="max-w-[35vw] absolute left-0 top-32 lg:top-32 -z-10">
+				<img src={CubeLeft?.src} alt="Cube Left" />
+			</div>
+			<div className="max-w-[35vw] absolute right-0 top-[50vh] lg:top-[50vh] -z-10">
+				<img src={CubeRight?.src} alt="Cube Right" />
+			</div>
+
+			<div className="max-w-[35vw] absolute left-0 top-[29%] lg:top-[29%]">
+				<img src={CubeLeft?.src} alt="Cube Left" />
+			</div>
+			<div className="max-w-[35vw] absolute right-0 top-[31.5%]  lg:top-[37%]">
+				<img src={CubeRight?.src} alt="Cube Right" />
+			</div>
+
+			<div className="max-w-[35vw] absolute left-0 top-[69%] lg:top-[58%]">
+				<img src={CubeLeft?.src} alt="Cube Left" />
+			</div>
+			<div className="max-w-[35vw] absolute right-0 top-[71.5%]  lg:top-[68%]">
+				<img src={CubeRight?.src} alt="Cube Right" />
+			</div>
+
+			<div className="max-w-[35vw] absolute left-0 top-[89%] lg:top-[85%]">
+				<img src={CubeLeft?.src} alt="Cube Left" />
+			</div>
+			<div className="max-w-[35vw] absolute right-0 top-[91.5%]  lg:top-[92%]">
+				<img src={CubeRight?.src} alt="Cube Right" />
+			</div>
 
 			<div className="container">
 				<h1 className="mb-20 text-4xl font-light tracking-widest text-center uppercase">
 					Politique de confidentialité
 				</h1>
 
-				<div className="content">
+				<div className="content relative">
 					<LinedTitle className="mt-12 text-2xl lg:mt-16">
 						<h2>
 							Qui sommes-nous et comment traitons-nous vos données
@@ -649,12 +677,12 @@ const Politics = () => {
 					{/*  */}
 				</div>
 			</div>
-			<div className="max-w-[35vw] absolute left-0 top-[35vh]  lg:top-96 -z-10">
+			{/* <div className="max-w-[35vw] absolute left-0 top-[35vh]  lg:top-96 -z-10">
 				<img src={CubeLeft?.src} alt="Cube Left" />
 			</div>
 			<div className="max-w-[35vw] absolute right-0 top-[35vh] translate-y-1/4 lg:translate-y-0 lg:top-36 -z-10">
 				<img src={CubeRight?.src} alt="Cube Right" />
-			</div>
+			</div> */}
 		</section>
 	);
 };
