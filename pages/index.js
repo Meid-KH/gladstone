@@ -33,7 +33,7 @@ export default function Home() {
 					itemProp="description"
 					content="Nous accompagnons les cabinets d'avocats, les directions juridiques, les banques et les fonds d'investissement dans le renforcement de leurs équipes juridiques en France et à l'international"
 				/>
-				<meta itemProp="image" content="/gladstone-favicon.png" />
+				{/* <meta itemProp="image" content="/gladstone-favicon.png" /> */}
 			</Head>
 			<Intro />
 			<Activity />
