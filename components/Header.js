@@ -26,7 +26,7 @@ const MENU_ITEMS = [
 	{
 		url: "#team",
 		label: "Équipe",
-		labelEn: "Team",
+		labelEn: "Our Team",
 	},
 	{
 		url: "#contact",
