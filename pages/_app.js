@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<Layout>
 			<Head>
-				<link rel="shortcut icon" href="/gladstone-favicon-v2.png" />
+				<link rel="shortcut icon" href="/gladstone-favicon-v3.png" />
 			</Head>
 			<Component {...pageProps} />
 		</Layout>
