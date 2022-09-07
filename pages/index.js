@@ -36,7 +36,7 @@ export default function Home() {
 				<meta
 					prefix="og: http://ogp.me/ns#"
 					property="og:title"
-					content="Conseil en recrutement Juridique | Gladstone"
+					content="Conseil en recrutement Juridique"
 				/>
 				<meta
 					prefix="og: http://ogp.me/ns#"
@@ -51,7 +51,7 @@ export default function Home() {
 				<meta
 					prefix="og: http://ogp.me/ns#"
 					property="og:url"
-					content="https://gladstone.vercel.app/"
+					content="https://gladstone.vercel.app?1"
 				/>
 			</Head>
 			<Intro />
