@@ -52,7 +52,7 @@ export default function Home() {
 				<meta
 					prefix="og: http://ogp.me/ns#"
 					property="og:url"
-					content="https://gladstone.vercel.app?1"
+					content="https://gladstone.vercel.app?15"
 				/>
 			</Head>
 			<Intro />
