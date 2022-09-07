@@ -47,6 +47,7 @@ export default function Home() {
 					prefix="og: http://ogp.me/ns#"
 					property="og:image"
 					content="/thumbnail.png"
+					key="og-image"
 				/>
 				<meta
 					prefix="og: http://ogp.me/ns#"
