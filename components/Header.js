@@ -93,7 +93,10 @@ const Header = ({ basic = false }) => {
 
 	if (basic) {
 		return (
-			<header className="sticky top-0 z-50 grid px-4 py-4 transition-transform duration-500 place-items-center md:px-8 md:py-6 bg-gradient-to-b from-primary/40 to-transparent backdrop-blur">
+			<header
+				className="sticky top-0 z-50 grid px-4 py-4 transition-transform duration-500 place-items-center md:px-8 md:py-6 
+      bg-gradient-to-b from-primary/40 to-transparent backdrop-blur"
+			>
 				<Gladstone show={true} />
 			</header>
 		);
@@ -101,11 +104,7 @@ const Header = ({ basic = false }) => {
 		return (
 			<header
 				className={`min-h-[112px] grid place-items-center px-4 md:px-8 py-4 md:py-6 transition-transform duration-500 
-        ${
-			sticky
-				? "sticky z-50 top-0 bg-gradient-to-b from-primary/40 to-transparent backdrop-blur"
-				: ""
-		}
+        ${sticky ? "sticky z-50 top-0 bg-primary/20 backdrop-blur-lg" : ""}
         ${showLogo ? "py-3" : "lg:min-h-[113px]"}
       `}
 			>

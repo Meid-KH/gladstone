@@ -19,7 +19,6 @@ import Yasmine from "../assets/img/yasmine-khouri.png";
 import Hanna from "../assets/img/hanna-ehrlich.png";
 
 export default function Home() {
-	// console.log(Cubes.src);
 	return (
 		<div>
 			<Head>
@@ -33,7 +32,27 @@ export default function Home() {
 					itemProp="description"
 					content="Nous accompagnons les cabinets d'avocats, les directions juridiques, les banques et les fonds d'investissement dans le renforcement de leurs équipes juridiques en France et à l'international"
 				/>
-				{/* <meta itemProp="image" content="/gladstone-favicon.png" /> */}
+
+				<meta
+					prefix="og: http://ogp.me/ns#"
+					property="og:title"
+					content="Conseil en recrutement Juridique | Gladstone"
+				/>
+				<meta
+					prefix="og: http://ogp.me/ns#"
+					property="og:type"
+					content="website"
+				/>
+				<meta
+					prefix="og: http://ogp.me/ns#"
+					property="og:image"
+					content="/thumbnail.png"
+				/>
+				<meta
+					prefix="og: http://ogp.me/ns#"
+					property="og:url"
+					content="https://gladstone.vercel.app/"
+				/>
 			</Head>
 			<Intro />
 			<Activity />
